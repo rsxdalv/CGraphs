@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Date_Task
+PROJECTNAME=DateClass
 
 # Active Configuration
 DEFAULTCONF=Debug

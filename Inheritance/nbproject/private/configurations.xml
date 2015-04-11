@@ -34,6 +34,16 @@
         <in>SHAPE.H</in>
         <in>main.cpp</in>
       </df>
+      <df name="VirtualClass">
+        <in>BEtalons.cpp</in>
+        <in>BEtalons.h</in>
+        <in>DEtalons.cpp</in>
+        <in>DEtalons.h</in>
+        <in>Etalons.h</in>
+        <in>PEtalons.cpp</in>
+        <in>PEtalons.h</in>
+        <in>main.cpp</in>
+      </df>
       <in>cilveks.cpp</in>
       <in>cilveks.h</in>
       <in>main.cpp</in>

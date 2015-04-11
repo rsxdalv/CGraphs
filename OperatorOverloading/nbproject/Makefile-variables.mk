@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Visual_Studio_10-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Visual_Studio_10-Windows
-CND_ARTIFACT_NAME_Debug=date_task
-CND_ARTIFACT_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/date_task
+CND_ARTIFACT_NAME_Debug=dateclass
+CND_ARTIFACT_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/dateclass
 CND_PACKAGE_DIR_Debug=dist/Debug/Visual_Studio_10-Windows/package
-CND_PACKAGE_NAME_Debug=datetask.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/package/datetask.tar
+CND_PACKAGE_NAME_Debug=dateclass.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/package/dateclass.tar
 # Release configuration
 CND_PLATFORM_Release=Visual_Studio_10-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Visual_Studio_10-Windows
-CND_ARTIFACT_NAME_Release=date_task
-CND_ARTIFACT_PATH_Release=dist/Release/Visual_Studio_10-Windows/date_task
+CND_ARTIFACT_NAME_Release=dateclass
+CND_ARTIFACT_PATH_Release=dist/Release/Visual_Studio_10-Windows/dateclass
 CND_PACKAGE_DIR_Release=dist/Release/Visual_Studio_10-Windows/package
-CND_PACKAGE_NAME_Release=datetask.tar
-CND_PACKAGE_PATH_Release=dist/Release/Visual_Studio_10-Windows/package/datetask.tar
+CND_PACKAGE_NAME_Release=dateclass.tar
+CND_PACKAGE_PATH_Release=dist/Release/Visual_Studio_10-Windows/package/dateclass.tar
 #
 # include compiler specific variables
 #
