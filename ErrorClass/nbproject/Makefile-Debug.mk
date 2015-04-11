@@ -23,7 +23,7 @@ AS=as
 # Macros
 CND_PLATFORM=Visual_Studio_10-Windows
 CND_DLIB_EXT=dll
-CND_CONF=Release
+CND_CONF=Debug
 CND_DISTDIR=dist
 CND_BUILDDIR=build
 
@@ -37,8 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/ErrorKlase.o \
 	${OBJECTDIR}/_uzdevumi/Masivs_Atrisinajums.o \
-	${OBJECTDIR}/_uzdevumi/T_Masivs_Atrisinajums.o \
-	${OBJECTDIR}/trycatch/06.o
+	${OBJECTDIR}/_uzdevumi/T_Masivs_Atrisinajums.o
 
 
 # C Compiler Flags
@@ -59,31 +58,26 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/templates_and_trycatch_and_errorclass.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/trycatch_and_errorclass.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/templates_and_trycatch_and_errorclass.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/trycatch_and_errorclass.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/templates_and_trycatch_and_errorclass ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/trycatch_and_errorclass ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/ErrorKlase.o: ErrorKlase.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ErrorKlase.o ErrorKlase.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ErrorKlase.o ErrorKlase.cpp
 
 ${OBJECTDIR}/_uzdevumi/Masivs_Atrisinajums.o: _uzdevumi/Masivs_Atrisinajums.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_uzdevumi
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_uzdevumi/Masivs_Atrisinajums.o _uzdevumi/Masivs_Atrisinajums.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_uzdevumi/Masivs_Atrisinajums.o _uzdevumi/Masivs_Atrisinajums.cpp
 
 ${OBJECTDIR}/_uzdevumi/T_Masivs_Atrisinajums.o: _uzdevumi/T_Masivs_Atrisinajums.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_uzdevumi
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_uzdevumi/T_Masivs_Atrisinajums.o _uzdevumi/T_Masivs_Atrisinajums.cpp
-
-${OBJECTDIR}/trycatch/06.o: trycatch/06.cpp 
-	${MKDIR} -p ${OBJECTDIR}/trycatch
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/trycatch/06.o trycatch/06.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_uzdevumi/T_Masivs_Atrisinajums.o _uzdevumi/T_Masivs_Atrisinajums.cpp
 
 # Subprojects
 .build-subprojects:
@@ -91,7 +85,7 @@ ${OBJECTDIR}/trycatch/06.o: trycatch/06.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/templates_and_trycatch_and_errorclass.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/trycatch_and_errorclass.exe
 
 # Subprojects
 .clean-subprojects:

@@ -11,9 +11,6 @@
         <itemPath>_uzdevumi/T_Masivs_Atrisinajums.cpp</itemPath>
         <itemPath>_uzdevumi/uzdevumi.txt</itemPath>
       </logicalFolder>
-      <logicalFolder name="trycatch" displayName="trycatch" projectFiles="true">
-        <itemPath>trycatch/06.cpp</itemPath>
-      </logicalFolder>
       <itemPath>ErrorKlase.cpp</itemPath>
       <itemPath>Makefile</itemPath>
     </logicalFolder>
@@ -63,8 +60,6 @@
       </item>
       <item path="_uzdevumi/uzdevumi.txt" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="trycatch/06.cpp" ex="false" tool="1" flavor2="0">
-      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -98,8 +93,6 @@
             flavor2="0">
       </item>
       <item path="_uzdevumi/uzdevumi.txt" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="trycatch/06.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

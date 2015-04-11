@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Templates_and_TryCatch_and_ErrorClass
+PROJECTNAME=TryCatch_and_ErrorClass
 
 # Active Configuration
 DEFAULTCONF=Debug
