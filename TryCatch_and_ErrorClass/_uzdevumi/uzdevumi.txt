@@ -1,0 +1,4 @@
+Uzdevumi:
+1. Jāizveido kļūdu apstrādes klasi, kas pārbauda cilvēka vecumu un vārdu. Jābūt divām funkcijām, priekš vārda - pārbauda vai vārds nav īsāks par 3 simboliem, un priekš vecuma - pārbauda vai skaitlis nav negatīvs, vai lielāks par 120.
+2. Jāparveido programmu Masivs_Atrisinajums.cpp, lai tā strādātu ar šabloniem.
+3. Ar #define palīdzību izveidot "funkciju" kas palielina doto x parametru par doto y vērtību.
