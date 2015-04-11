@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=GraphicProjections_3d_to_2d
+PROJECTNAME=GraphicProjections
 
 # Active Configuration
 DEFAULTCONF=Debug

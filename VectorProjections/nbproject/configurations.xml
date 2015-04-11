@@ -8,26 +8,12 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>3d_to_2d.doc</itemPath>
+      <itemPath>Untitled.png</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <logicalFolder name="bin" displayName="bin" projectFiles="true">
-        <logicalFolder name="Release" displayName="Release" projectFiles="true">
-          <itemPath>bin/Release/em.exe</itemPath>
-        </logicalFolder>
-      </logicalFolder>
-      <logicalFolder name="obj" displayName="obj" projectFiles="true">
-        <logicalFolder name="Release" displayName="Release" projectFiles="true">
-        </logicalFolder>
-      </logicalFolder>
-      <itemPath>3d_to_2d.doc</itemPath>
-      <itemPath>Makefile</itemPath>
-      <itemPath>Untitled.png</itemPath>
-      <itemPath>em.cbp</itemPath>
-      <itemPath>em.depend</itemPath>
-      <itemPath>em.layout</itemPath>
-      <itemPath>grafika.exe</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -57,19 +43,7 @@
       </compileType>
       <item path="3d_to_2d.doc" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Makefile" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Untitled.png" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="bin/Release/em.exe" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="em.cbp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="em.depend" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="em.layout" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="grafika.exe" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -96,19 +70,7 @@
       </compileType>
       <item path="3d_to_2d.doc" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Makefile" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Untitled.png" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="bin/Release/em.exe" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="em.cbp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="em.depend" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="em.layout" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="grafika.exe" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
