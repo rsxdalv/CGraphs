@@ -2,6 +2,24 @@
 <configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
+      <df name="3. Mantosana">
+        <df name="1">
+          <in>POINT.H</in>
+          <in>main.cpp</in>
+        </df>
+        <df name="2">
+          <in>CIRCLE.H</in>
+          <in>CYLINDER.h</in>
+          <in>POINT.H</in>
+          <in>main.cpp</in>
+        </df>
+        <df name="2_v2">
+          <in>CIRCLE.H</in>
+          <in>CYLINDER.h</in>
+          <in>POINT.H</in>
+          <in>main.cpp</in>
+        </df>
+      </df>
       <df name="Uzdevums">
         <in>HWorker.h</in>
         <in>WWorker.cpp</in>

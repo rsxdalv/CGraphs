@@ -2,18 +2,8 @@
 <configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
-      <df name="1. Projekts">
-        <in>Timeh.cpp</in>
-        <in>Timetest.cpp</in>
-      </df>
-      <df name="3. Mantosana">
-        <df name="1">
-          <in>main.cpp</in>
-        </df>
-        <df name="2">
-          <in>main.cpp</in>
-        </df>
-      </df>
+      <in>Timeh.cpp</in>
+      <in>Timetest.cpp</in>
     </df>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -44,35 +34,10 @@
           <executablePath></executablePath>
         </makeTool>
       </makefileType>
-      <item path="1. Projekts/Timeh.cpp" ex="false" tool="1" flavor2="4">
+      <item path="Timeh.cpp" ex="false" tool="1" flavor2="4">
       </item>
-      <item path="1. Projekts/Timetest.cpp" ex="false" tool="1" flavor2="4">
+      <item path="Timetest.cpp" ex="false" tool="1" flavor2="4">
       </item>
-      <item path="3. Mantosana/1/main.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="3. Mantosana/2/main.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <folder path="0/1. Projekts">
-        <ccTool>
-          <incDir>
-            <pElem>1. Projekts</pElem>
-          </incDir>
-        </ccTool>
-      </folder>
-      <folder path="0/3. Mantosana/1">
-        <ccTool>
-          <incDir>
-            <pElem>3. Mantosana/1</pElem>
-          </incDir>
-        </ccTool>
-      </folder>
-      <folder path="0/3. Mantosana/2">
-        <ccTool>
-          <incDir>
-            <pElem>3. Mantosana/2</pElem>
-          </incDir>
-        </ccTool>
-      </folder>
     </conf>
   </confs>
 </configurationDescriptor>
