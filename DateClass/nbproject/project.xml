@@ -3,9 +3,9 @@
     <type>org.netbeans.modules.cnd.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>Date_Task</name>
+            <name>DateClass</name>
             <c-extensions/>
-            <cpp-extensions/>
+            <cpp-extensions>cpp</cpp-extensions>
             <header-extensions/>
             <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects/>
