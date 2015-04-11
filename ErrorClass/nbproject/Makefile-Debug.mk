@@ -35,9 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/ErrorKlase.o \
-	${OBJECTDIR}/_uzdevumi/Masivs_Atrisinajums.o \
-	${OBJECTDIR}/_uzdevumi/T_Masivs_Atrisinajums.o
+	${OBJECTDIR}/ErrorKlase.o
 
 
 # C Compiler Flags
@@ -58,26 +56,16 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/trycatch_and_errorclass.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/errorclass.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/trycatch_and_errorclass.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/errorclass.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/trycatch_and_errorclass ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/errorclass ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/ErrorKlase.o: ErrorKlase.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ErrorKlase.o ErrorKlase.cpp
-
-${OBJECTDIR}/_uzdevumi/Masivs_Atrisinajums.o: _uzdevumi/Masivs_Atrisinajums.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_uzdevumi
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_uzdevumi/Masivs_Atrisinajums.o _uzdevumi/Masivs_Atrisinajums.cpp
-
-${OBJECTDIR}/_uzdevumi/T_Masivs_Atrisinajums.o: _uzdevumi/T_Masivs_Atrisinajums.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_uzdevumi
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_uzdevumi/T_Masivs_Atrisinajums.o _uzdevumi/T_Masivs_Atrisinajums.cpp
 
 # Subprojects
 .build-subprojects:
@@ -85,7 +73,7 @@ ${OBJECTDIR}/_uzdevumi/T_Masivs_Atrisinajums.o: _uzdevumi/T_Masivs_Atrisinajums.
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/trycatch_and_errorclass.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/errorclass.exe
 
 # Subprojects
 .clean-subprojects:

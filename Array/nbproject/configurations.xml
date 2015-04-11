@@ -8,6 +8,11 @@
     <logicalFolder name="L7CppSamples"
                    displayName="L7CppSamples"
                    projectFiles="true">
+      <logicalFolder name="_uzdevumi" displayName="_uzdevumi" projectFiles="true">
+        <itemPath>Masivs_Atrisinajums_1.cpp</itemPath>
+        <itemPath>T_Masivs_Atrisinajums.cpp</itemPath>
+        <itemPath>uzdevumi.txt</itemPath>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>Masivs.cpp</itemPath>
       <itemPath>Masivs.exe</itemPath>
@@ -59,9 +64,15 @@
       </item>
       <item path="Masivs_Atrisinajums.exe" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Masivs_Atrisinajums_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="NewDelete.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="NewDelete.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="T_Masivs_Atrisinajums.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="uzdevumi.txt" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -94,9 +105,15 @@
       </item>
       <item path="Masivs_Atrisinajums.exe" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Masivs_Atrisinajums_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="NewDelete.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="NewDelete.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="T_Masivs_Atrisinajums.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="uzdevumi.txt" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

@@ -37,7 +37,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Masivs.o \
 	${OBJECTDIR}/Masivs_Atrisinajums.o \
-	${OBJECTDIR}/NewDelete.o
+	${OBJECTDIR}/Masivs_Atrisinajums_1.o \
+	${OBJECTDIR}/NewDelete.o \
+	${OBJECTDIR}/T_Masivs_Atrisinajums.o
 
 
 # C Compiler Flags
@@ -74,10 +76,20 @@ ${OBJECTDIR}/Masivs_Atrisinajums.o: Masivs_Atrisinajums.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Masivs_Atrisinajums.o Masivs_Atrisinajums.cpp
 
+${OBJECTDIR}/Masivs_Atrisinajums_1.o: Masivs_Atrisinajums_1.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Masivs_Atrisinajums_1.o Masivs_Atrisinajums_1.cpp
+
 ${OBJECTDIR}/NewDelete.o: NewDelete.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/NewDelete.o NewDelete.cpp
+
+${OBJECTDIR}/T_Masivs_Atrisinajums.o: T_Masivs_Atrisinajums.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/T_Masivs_Atrisinajums.o T_Masivs_Atrisinajums.cpp
 
 # Subprojects
 .build-subprojects:

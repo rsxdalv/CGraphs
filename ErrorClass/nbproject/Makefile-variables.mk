@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Visual_Studio_10-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Visual_Studio_10-Windows
-CND_ARTIFACT_NAME_Debug=trycatch_and_errorclass
-CND_ARTIFACT_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/trycatch_and_errorclass
+CND_ARTIFACT_NAME_Debug=errorclass
+CND_ARTIFACT_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/errorclass
 CND_PACKAGE_DIR_Debug=dist/Debug/Visual_Studio_10-Windows/package
-CND_PACKAGE_NAME_Debug=trycatchanderrorclass.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/package/trycatchanderrorclass.tar
+CND_PACKAGE_NAME_Debug=errorclass.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/package/errorclass.tar
 # Release configuration
 CND_PLATFORM_Release=Visual_Studio_10-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Visual_Studio_10-Windows
-CND_ARTIFACT_NAME_Release=trycatch_and_errorclass
-CND_ARTIFACT_PATH_Release=dist/Release/Visual_Studio_10-Windows/trycatch_and_errorclass
+CND_ARTIFACT_NAME_Release=errorclass
+CND_ARTIFACT_PATH_Release=dist/Release/Visual_Studio_10-Windows/errorclass
 CND_PACKAGE_DIR_Release=dist/Release/Visual_Studio_10-Windows/package
-CND_PACKAGE_NAME_Release=trycatchanderrorclass.tar
-CND_PACKAGE_PATH_Release=dist/Release/Visual_Studio_10-Windows/package/trycatchanderrorclass.tar
+CND_PACKAGE_NAME_Release=errorclass.tar
+CND_PACKAGE_PATH_Release=dist/Release/Visual_Studio_10-Windows/package/errorclass.tar
 #
 # include compiler specific variables
 #
