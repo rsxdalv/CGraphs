@@ -20,8 +20,6 @@
           <itemPath>trycatch/Koks/koks.exe</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <itemPath>Macro.cpp</itemPath>
-      <itemPath>Macro.exe</itemPath>
       <itemPath>Makefile</itemPath>
       <itemPath>Uzdevumi.docx</itemPath>
       <itemPath>~$devumi.docx</itemPath>
@@ -60,10 +58,6 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Macro.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Macro.exe" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Makefile" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Uzdevumi.docx" ex="false" tool="3" flavor2="0">
@@ -105,10 +99,6 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Macro.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Macro.exe" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Makefile" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Uzdevumi.docx" ex="false" tool="3" flavor2="0">

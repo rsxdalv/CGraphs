@@ -35,10 +35,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Macro.o \
-	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/template/Koks/koks.o \
-	${OBJECTDIR}/trycatch/Koks/koks.o
+	${OBJECTDIR}/koks.o \
+	${OBJECTDIR}/template01.o \
+	${OBJECTDIR}/template02.o \
+	${OBJECTDIR}/template03.o \
+	${OBJECTDIR}/template04.o
 
 
 # C Compiler Flags
@@ -59,31 +60,36 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/macro_template_trycatch_2.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/template.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/macro_template_trycatch_2.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/template.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/macro_template_trycatch_2 ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/template ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Macro.o: Macro.cpp 
+${OBJECTDIR}/koks.o: koks.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Macro.o Macro.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/koks.o koks.cpp
 
-${OBJECTDIR}/main.o: main.c 
+${OBJECTDIR}/template01.o: template01.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/template01.o template01.cpp
 
-${OBJECTDIR}/template/Koks/koks.o: template/Koks/koks.cpp 
-	${MKDIR} -p ${OBJECTDIR}/template/Koks
+${OBJECTDIR}/template02.o: template02.cpp 
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/template/Koks/koks.o template/Koks/koks.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/template02.o template02.cpp
 
-${OBJECTDIR}/trycatch/Koks/koks.o: trycatch/Koks/koks.cpp 
-	${MKDIR} -p ${OBJECTDIR}/trycatch/Koks
+${OBJECTDIR}/template03.o: template03.cpp 
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/trycatch/Koks/koks.o trycatch/Koks/koks.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/template03.o template03.cpp
+
+${OBJECTDIR}/template04.o: template04.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/template04.o template04.cpp
 
 # Subprojects
 .build-subprojects:
@@ -91,7 +97,7 @@ ${OBJECTDIR}/trycatch/Koks/koks.o: trycatch/Koks/koks.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/macro_template_trycatch_2.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/template.exe
 
 # Subprojects
 .clean-subprojects:

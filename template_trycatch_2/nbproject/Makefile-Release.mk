@@ -23,7 +23,7 @@ AS=as
 # Macros
 CND_PLATFORM=Visual_Studio_10-Windows
 CND_DLIB_EXT=dll
-CND_CONF=Debug
+CND_CONF=Release
 CND_DISTDIR=dist
 CND_BUILDDIR=build
 
@@ -35,9 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/koks.o \
-	${OBJECTDIR}/tree_int.o \
-	${OBJECTDIR}/tree_string.o
+	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/template/Koks/koks.o \
+	${OBJECTDIR}/trycatch/Koks/koks.o
 
 
 # C Compiler Flags
@@ -58,26 +58,26 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/treeclass.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/macro_template_trycatch_2.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/treeclass.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/macro_template_trycatch_2.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/treeclass ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/macro_template_trycatch_2 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/koks.o: koks.cpp 
+${OBJECTDIR}/main.o: main.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/koks.o koks.cpp
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
 
-${OBJECTDIR}/tree_int.o: tree_int.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/template/Koks/koks.o: template/Koks/koks.cpp 
+	${MKDIR} -p ${OBJECTDIR}/template/Koks
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tree_int.o tree_int.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/template/Koks/koks.o template/Koks/koks.cpp
 
-${OBJECTDIR}/tree_string.o: tree_string.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/trycatch/Koks/koks.o: trycatch/Koks/koks.cpp 
+	${MKDIR} -p ${OBJECTDIR}/trycatch/Koks
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tree_string.o tree_string.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/trycatch/Koks/koks.o trycatch/Koks/koks.cpp
 
 # Subprojects
 .build-subprojects:
@@ -85,7 +85,7 @@ ${OBJECTDIR}/tree_string.o: tree_string.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/treeclass.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/macro_template_trycatch_2.exe
 
 # Subprojects
 .clean-subprojects:

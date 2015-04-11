@@ -35,7 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/koks.o
+	${OBJECTDIR}/koks.o \
+	${OBJECTDIR}/tree_int.o \
+	${OBJECTDIR}/tree_string.o
 
 
 # C Compiler Flags
@@ -66,6 +68,16 @@ ${OBJECTDIR}/koks.o: koks.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/koks.o koks.cpp
+
+${OBJECTDIR}/tree_int.o: tree_int.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tree_int.o tree_int.cpp
+
+${OBJECTDIR}/tree_string.o: tree_string.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tree_string.o tree_string.cpp
 
 # Subprojects
 .build-subprojects:

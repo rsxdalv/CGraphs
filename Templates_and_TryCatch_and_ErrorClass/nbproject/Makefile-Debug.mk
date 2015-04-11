@@ -38,7 +38,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/ErrorKlase.o \
 	${OBJECTDIR}/_uzdevumi/Masivs_Atrisinajums.o \
 	${OBJECTDIR}/_uzdevumi/T_Masivs_Atrisinajums.o \
-	${OBJECTDIR}/define/define.o \
 	${OBJECTDIR}/template/template03.o \
 	${OBJECTDIR}/template/template04.o \
 	${OBJECTDIR}/trycatch/06.o
@@ -82,11 +81,6 @@ ${OBJECTDIR}/_uzdevumi/T_Masivs_Atrisinajums.o: _uzdevumi/T_Masivs_Atrisinajums.
 	${MKDIR} -p ${OBJECTDIR}/_uzdevumi
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_uzdevumi/T_Masivs_Atrisinajums.o _uzdevumi/T_Masivs_Atrisinajums.cpp
-
-${OBJECTDIR}/define/define.o: define/define.cpp 
-	${MKDIR} -p ${OBJECTDIR}/define
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/define/define.o define/define.cpp
 
 ${OBJECTDIR}/template/template03.o: template/template03.cpp 
 	${MKDIR} -p ${OBJECTDIR}/template

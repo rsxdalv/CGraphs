@@ -13,10 +13,6 @@
         <itemPath>_uzdevumi/T_Masivs_Atrisinajums.exe</itemPath>
         <itemPath>_uzdevumi/uzdevumi.txt</itemPath>
       </logicalFolder>
-      <logicalFolder name="define" displayName="macro" projectFiles="true">
-        <itemPath>define/define.cpp</itemPath>
-        <itemPath>define/define.exe</itemPath>
-      </logicalFolder>
       <logicalFolder name="template" displayName="template" projectFiles="true">
         <itemPath>template/template03.cpp</itemPath>
         <itemPath>template/template04.cpp</itemPath>
@@ -84,10 +80,6 @@
       </item>
       <item path="_uzdevumi/uzdevumi.txt" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="define/define.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="define/define.exe" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="template/template03.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="template/template04.cpp" ex="false" tool="1" flavor2="0">
@@ -138,10 +130,6 @@
             flavor2="0">
       </item>
       <item path="_uzdevumi/uzdevumi.txt" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="define/define.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="define/define.exe" ex="false" tool="3" flavor2="0">
       </item>
       <item path="template/template03.cpp" ex="false" tool="1" flavor2="0">
       </item>

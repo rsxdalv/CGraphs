@@ -5,25 +5,26 @@
                    displayName="Header Files"
                    projectFiles="true">
     </logicalFolder>
-    <logicalFolder name="Labots Koks" displayName="MK" projectFiles="true">
-      <itemPath>Makefile</itemPath>
-      <itemPath>Makefile.win</itemPath>
-      <itemPath>Makefile_1.win</itemPath>
-    </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
-      <itemPath>koks.jpg</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <logicalFolder name="Koks" displayName="Koks" projectFiles="true">
-        <itemPath>koks.cpp</itemPath>
-        <itemPath>koks.dev</itemPath>
+      <logicalFolder name="template" displayName="template" projectFiles="true">
+        <logicalFolder name="Koks" displayName="Koks" projectFiles="true">
+          <itemPath>koks.cpp</itemPath>
+          <itemPath>koks.dev</itemPath>
+        </logicalFolder>
+        <itemPath>template01.cpp</itemPath>
+        <itemPath>template01.exe</itemPath>
+        <itemPath>template02.cpp</itemPath>
+        <itemPath>template02.exe</itemPath>
+        <itemPath>template03.cpp</itemPath>
+        <itemPath>template04.cpp</itemPath>
+        <itemPath>template04.exe</itemPath>
       </logicalFolder>
-      <itemPath>tree_int.cpp</itemPath>
-      <itemPath>tree_string.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -37,9 +38,6 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
-  <sourceRootList>
-    <Elem>.</Elem>
-  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
@@ -50,21 +48,23 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Makefile" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Makefile.win" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Makefile_1.win" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="koks.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="koks.dev" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="koks.jpg" ex="false" tool="3" flavor2="0">
+      <item path="template01.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="tree_int.cpp" ex="false" tool="1" flavor2="0">
+      <item path="template01.exe" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="tree_string.cpp" ex="false" tool="1" flavor2="0">
+      <item path="template02.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="template02.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="template03.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="template04.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="template04.exe" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -87,21 +87,23 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Makefile" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Makefile.win" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Makefile_1.win" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="koks.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="koks.dev" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="koks.jpg" ex="false" tool="3" flavor2="0">
+      <item path="template01.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="tree_int.cpp" ex="false" tool="1" flavor2="0">
+      <item path="template01.exe" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="tree_string.cpp" ex="false" tool="1" flavor2="0">
+      <item path="template02.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="template02.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="template03.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="template04.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="template04.exe" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>
