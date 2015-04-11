@@ -8,18 +8,16 @@
     <logicalFolder name="L16Cpp" displayName="L16Cpp" projectFiles="true">
       <itemPath>Makefile</itemPath>
       <itemPath>Makefile.win</itemPath>
-      <itemPath>koks.cpp</itemPath>
-      <itemPath>koks.dev</itemPath>
-      <itemPath>koks.exe</itemPath>
-      <itemPath>koks.jpg</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>koks.jpg</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>koks.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -52,10 +50,6 @@
       </item>
       <item path="koks.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="koks.dev" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="koks.exe" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="koks.jpg" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
@@ -84,10 +78,6 @@
       <item path="Makefile.win" ex="false" tool="3" flavor2="0">
       </item>
       <item path="koks.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="koks.dev" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="koks.exe" ex="false" tool="3" flavor2="0">
       </item>
       <item path="koks.jpg" ex="false" tool="3" flavor2="0">
       </item>
