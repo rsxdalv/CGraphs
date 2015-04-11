@@ -13,10 +13,16 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="bitchain" displayName="bitchain" projectFiles="true">
-        <itemPath>bitchain/Makefile.win</itemPath>
-        <itemPath>bitchain/bitchain.dev</itemPath>
-        <itemPath>bitchain/bitchain.exe</itemPath>
         <itemPath>bitchain/main.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="compr" displayName="compr" projectFiles="true">
+        <itemPath>FileFormat.c</itemPath>
+        <itemPath>FileFormat.h</itemPath>
+        <itemPath>main_2.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="em" displayName="em" projectFiles="true">
+        <itemPath>em.cbp</itemPath>
+        <itemPath>main_1.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="faili" displayName="faili" projectFiles="true">
         <logicalFolder name="Patvaliga (binarie faili)"
@@ -39,13 +45,6 @@
                      projectFiles="true">
         <itemPath>Informacijas saspiesana/Informacijas saspiesana.doc</itemPath>
       </logicalFolder>
-      <itemPath>Compress.cbp</itemPath>
-      <itemPath>Compress.depend</itemPath>
-      <itemPath>Compress.dev</itemPath>
-      <itemPath>Compress.exe</itemPath>
-      <itemPath>Compress.layout</itemPath>
-      <itemPath>Makefile</itemPath>
-      <itemPath>Makefile.win</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -73,32 +72,18 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Compress.cbp" ex="false" tool="3" flavor2="0">
+      <item path="FileFormat.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="Compress.depend" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Compress.dev" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Compress.exe" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Compress.layout" ex="false" tool="3" flavor2="0">
+      <item path="FileFormat.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Informacijas saspiesana/Informacijas saspiesana.doc"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="Makefile" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Makefile.win" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="bitchain/Makefile.win" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="bitchain/bitchain.dev" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="bitchain/bitchain.exe" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="bitchain/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="em.cbp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="faili/Patvaliga (binarie faili)/CREATE.cpp"
             ex="false"
@@ -131,6 +116,10 @@
             flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="main_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="main_2.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -153,32 +142,18 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Compress.cbp" ex="false" tool="3" flavor2="0">
+      <item path="FileFormat.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="Compress.depend" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Compress.dev" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Compress.exe" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Compress.layout" ex="false" tool="3" flavor2="0">
+      <item path="FileFormat.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Informacijas saspiesana/Informacijas saspiesana.doc"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="Makefile" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Makefile.win" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="bitchain/Makefile.win" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="bitchain/bitchain.dev" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="bitchain/bitchain.exe" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="bitchain/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="em.cbp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="faili/Patvaliga (binarie faili)/CREATE.cpp"
             ex="false"
@@ -211,6 +186,10 @@
             flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="main_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="main_2.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
