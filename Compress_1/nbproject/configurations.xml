@@ -5,7 +5,13 @@
                    displayName="Header Files"
                    projectFiles="true">
     </logicalFolder>
-    <logicalFolder name="L24CPP" displayName="L24CPP" projectFiles="true">
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
       <logicalFolder name="bitchain" displayName="bitchain" projectFiles="true">
         <itemPath>bitchain/Makefile.win</itemPath>
         <itemPath>bitchain/bitchain.dev</itemPath>
@@ -41,14 +47,6 @@
       <itemPath>Makefile</itemPath>
       <itemPath>Makefile.win</itemPath>
       <itemPath>main.cpp</itemPath>
-    </logicalFolder>
-    <logicalFolder name="ResourceFiles"
-                   displayName="Resource Files"
-                   projectFiles="true">
-    </logicalFolder>
-    <logicalFolder name="SourceFiles"
-                   displayName="Source Files"
-                   projectFiles="true">
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"

@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1314945464 source:c:\users\rsx\desktop\coding\c++\2y-2\l24cpp\main.cpp
-	<iostream>
-	<vector>
-	<string.h>
-	<queue>
-

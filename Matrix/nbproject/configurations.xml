@@ -5,34 +5,26 @@
                    displayName="Header Files"
                    projectFiles="true">
     </logicalFolder>
-    <logicalFolder name="LCPP 0 Matrix_F"
-                   displayName="LCPP 0 Matrix_F"
-                   projectFiles="true">
-      <logicalFolder name="2" displayName="Assignment" projectFiles="true">
-        <itemPath>Makefile_1</itemPath>
-        <itemPath>kd.txt</itemPath>
-        <itemPath>main.txt</itemPath>
-        <itemPath>main_1.cpp</itemPath>
-        <itemPath>main_1.exe</itemPath>
-        <itemPath>matrica.txt</itemPath>
-        <itemPath>matrica2.txt</itemPath>
-      </logicalFolder>
-      <itemPath>Default_matrica.png</itemPath>
-      <itemPath>Makefile</itemPath>
-      <itemPath>main.cpp</itemPath>
-      <itemPath>main.cpp.cbTemp</itemPath>
-      <itemPath>main.exe</itemPath>
-      <itemPath>matrx.dat</itemPath>
-      <itemPath>matrx.txt</itemPath>
-      <itemPath>test1.dat</itemPath>
-    </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>Default_matrica.png</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="2" displayName="Assignment" projectFiles="true">
+        <itemPath>kd.txt</itemPath>
+        <itemPath>main.txt</itemPath>
+        <itemPath>main_1.cpp</itemPath>
+        <itemPath>matrica.txt</itemPath>
+        <itemPath>matrica2.txt</itemPath>
+      </logicalFolder>
+      <itemPath>Makefile</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>matrx.dat</itemPath>
+      <itemPath>matrx.txt</itemPath>
+      <itemPath>test1.dat</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -63,21 +55,13 @@
       </item>
       <item path="Makefile" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Makefile_1" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="kd.txt" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="main.cpp.cbTemp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="main.exe" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="main.txt" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main_1.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="main_1.exe" ex="false" tool="3" flavor2="0">
       </item>
       <item path="matrica.txt" ex="false" tool="3" flavor2="0">
       </item>
@@ -114,21 +98,13 @@
       </item>
       <item path="Makefile" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Makefile_1" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="kd.txt" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="main.cpp.cbTemp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="main.exe" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="main.txt" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main_1.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="main_1.exe" ex="false" tool="3" flavor2="0">
       </item>
       <item path="matrica.txt" ex="false" tool="3" flavor2="0">
       </item>

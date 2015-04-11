@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1314958750 source:c:\users\rsx\desktop\coding\c++\2y-2\l24cpp v2\compr\main.cpp
-	<iostream>
-	<vector>
-	<string.h>
-	<queue>
-

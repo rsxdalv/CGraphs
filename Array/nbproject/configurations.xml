@@ -5,8 +5,12 @@
                    displayName="Header Files"
                    projectFiles="true">
     </logicalFolder>
-    <logicalFolder name="L7CppSamples"
-                   displayName="L7CppSamples"
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="_uzdevumi" displayName="_uzdevumi" projectFiles="true">
         <itemPath>Masivs_Atrisinajums_1.cpp</itemPath>
@@ -20,14 +24,6 @@
       <itemPath>Masivs_Atrisinajums.exe</itemPath>
       <itemPath>NewDelete.cpp</itemPath>
       <itemPath>NewDelete.exe</itemPath>
-    </logicalFolder>
-    <logicalFolder name="ResourceFiles"
-                   displayName="Resource Files"
-                   projectFiles="true">
-    </logicalFolder>
-    <logicalFolder name="SourceFiles"
-                   displayName="Source Files"
-                   projectFiles="true">
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"

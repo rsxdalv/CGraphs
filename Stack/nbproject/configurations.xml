@@ -5,13 +5,6 @@
                    displayName="Header Files"
                    projectFiles="true">
     </logicalFolder>
-    <logicalFolder name="L13Cpp" displayName="L13Cpp" projectFiles="true">
-      <itemPath>Makefile</itemPath>
-      <itemPath>rowthingie.cpp</itemPath>
-      <itemPath>rowthingie.exe</itemPath>
-      <itemPath>stack.cpp</itemPath>
-      <itemPath>stack.exe</itemPath>
-    </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
@@ -19,6 +12,11 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Makefile</itemPath>
+      <itemPath>rowthingie.cpp</itemPath>
+      <itemPath>rowthingie.exe</itemPath>
+      <itemPath>stack.cpp</itemPath>
+      <itemPath>stack.exe</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"

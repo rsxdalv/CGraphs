@@ -5,46 +5,18 @@
                    displayName="Header Files"
                    projectFiles="true">
     </logicalFolder>
-    <logicalFolder name="L24CPP v2" displayName="L24CPP v2" projectFiles="true">
-      <logicalFolder name="compr" displayName="compr" projectFiles="true">
-        <logicalFolder name="bin" displayName="bin" projectFiles="true">
-          <logicalFolder name="Release" displayName="Release" projectFiles="true">
-            <itemPath>compr/bin/Release/compr.exe</itemPath>
-          </logicalFolder>
-        </logicalFolder>
-        <logicalFolder name="obj" displayName="obj" projectFiles="true">
-          <logicalFolder name="Release" displayName="Release" projectFiles="true">
-          </logicalFolder>
-        </logicalFolder>
-        <itemPath>compr/FileFormat.c</itemPath>
-        <itemPath>compr/FileFormat.h</itemPath>
-        <itemPath>compr/compr.cbp</itemPath>
-        <itemPath>compr/compr.depend</itemPath>
-        <itemPath>compr/compr.layout</itemPath>
-        <itemPath>compr/main.cpp</itemPath>
-      </logicalFolder>
-      <logicalFolder name="em" displayName="em" projectFiles="true">
-        <logicalFolder name="bin" displayName="bin" projectFiles="true">
-          <logicalFolder name="Release" displayName="Release" projectFiles="true">
-            <itemPath>em/bin/Release/em.exe</itemPath>
-          </logicalFolder>
-        </logicalFolder>
-        <logicalFolder name="obj" displayName="obj" projectFiles="true">
-          <logicalFolder name="Release" displayName="Release" projectFiles="true">
-          </logicalFolder>
-        </logicalFolder>
-        <itemPath>em/em.cbp</itemPath>
-        <itemPath>em/main.cpp</itemPath>
-      </logicalFolder>
-      <itemPath>Makefile</itemPath>
-    </logicalFolder>
-    <logicalFolder name="ResourceFiles"
-                   displayName="Resource Files"
-                   projectFiles="true">
-    </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="compr" displayName="compr" projectFiles="true">
+        <itemPath>compr/FileFormat.c</itemPath>
+        <itemPath>compr/FileFormat.h</itemPath>
+        <itemPath>compr/main.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="em" displayName="em" projectFiles="true">
+        <itemPath>em/em.cbp</itemPath>
+        <itemPath>em/main.cpp</itemPath>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -71,23 +43,11 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Makefile" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="compr/FileFormat.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="compr/FileFormat.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="compr/bin/Release/compr.exe" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="compr/compr.cbp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="compr/compr.depend" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="compr/compr.layout" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="compr/main.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="em/bin/Release/em.exe" ex="false" tool="3" flavor2="0">
       </item>
       <item path="em/em.cbp" ex="false" tool="3" flavor2="0">
       </item>
@@ -114,23 +74,11 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Makefile" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="compr/FileFormat.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="compr/FileFormat.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="compr/bin/Release/compr.exe" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="compr/compr.cbp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="compr/compr.depend" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="compr/compr.layout" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="compr/main.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="em/bin/Release/em.exe" ex="false" tool="3" flavor2="0">
       </item>
       <item path="em/em.cbp" ex="false" tool="3" flavor2="0">
       </item>

@@ -5,11 +5,6 @@
                    displayName="Header Files"
                    projectFiles="true">
     </logicalFolder>
-    <logicalFolder name="L19CPP" displayName="L19CPP" projectFiles="true">
-      <itemPath>Makefile</itemPath>
-      <itemPath>progr_izp_laiks.cpp</itemPath>
-      <itemPath>progr_izp_laiks.exe</itemPath>
-    </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
@@ -17,6 +12,9 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Makefile</itemPath>
+      <itemPath>progr_izp_laiks.cpp</itemPath>
+      <itemPath>progr_izp_laiks.exe</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"

@@ -5,13 +5,6 @@
                    displayName="Header Files"
                    projectFiles="true">
     </logicalFolder>
-    <logicalFolder name="L9CppTask" displayName="L9CppTask" projectFiles="true">
-      <itemPath>16.11.2010.dev</itemPath>
-      <itemPath>Main.cpp</itemPath>
-      <itemPath>Makefile</itemPath>
-      <itemPath>Makefile.win</itemPath>
-      <itemPath>mystring.h</itemPath>
-    </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
@@ -19,6 +12,11 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>16.11.2010.dev</itemPath>
+      <itemPath>Main.cpp</itemPath>
+      <itemPath>Makefile</itemPath>
+      <itemPath>Makefile.win</itemPath>
+      <itemPath>mystring.h</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"

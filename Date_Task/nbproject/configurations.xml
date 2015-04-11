@@ -5,13 +5,10 @@
                    displayName="Header Files"
                    projectFiles="true">
     </logicalFolder>
-    <logicalFolder name="L6CppUzd" displayName="L6CppUzd" projectFiles="true">
-      <itemPath>Makefile</itemPath>
-      <itemPath>uzdevums.doc</itemPath>
-    </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>uzdevums.doc</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -42,8 +39,6 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Makefile" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="uzdevums.doc" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
@@ -67,8 +62,6 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Makefile" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="uzdevums.doc" ex="false" tool="3" flavor2="0">
       </item>
     </conf>

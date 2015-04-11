@@ -5,14 +5,6 @@
                    displayName="Header Files"
                    projectFiles="true">
     </logicalFolder>
-    <logicalFolder name="L8Cpp" displayName="L8Cpp" projectFiles="true">
-      <itemPath>Const Operator Samples.cpp</itemPath>
-      <itemPath>Makefile</itemPath>
-      <itemPath>format_IO_1.cpp</itemPath>
-      <itemPath>format_IO_1.exe</itemPath>
-      <itemPath>format_IO_2.cpp</itemPath>
-      <itemPath>uzdevums.txt</itemPath>
-    </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
@@ -20,6 +12,12 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Const Operator Samples.cpp</itemPath>
+      <itemPath>Makefile</itemPath>
+      <itemPath>format_IO_1.cpp</itemPath>
+      <itemPath>format_IO_1.exe</itemPath>
+      <itemPath>format_IO_2.cpp</itemPath>
+      <itemPath>uzdevums.txt</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
