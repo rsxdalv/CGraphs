@@ -35,7 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/progr_izp_laiks.o
+	${OBJECTDIR}/progr_izp_laiks.o \
+	${OBJECTDIR}/timer.o
 
 
 # C Compiler Flags
@@ -56,16 +57,21 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/benchmarkfunctions.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/benchmark_2.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/benchmarkfunctions.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/benchmark_2.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/benchmarkfunctions ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/benchmark_2 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/progr_izp_laiks.o: progr_izp_laiks.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/progr_izp_laiks.o progr_izp_laiks.cpp
+
+${OBJECTDIR}/timer.o: timer.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/timer.o timer.cpp
 
 # Subprojects
 .build-subprojects:
@@ -73,7 +79,7 @@ ${OBJECTDIR}/progr_izp_laiks.o: progr_izp_laiks.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/benchmarkfunctions.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/benchmark_2.exe
 
 # Subprojects
 .clean-subprojects:

@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/progr_izp_laiks.o \
 	${OBJECTDIR}/timer.o
 
 
@@ -61,6 +62,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/benchmark_2.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/benchmark_2 ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/progr_izp_laiks.o: progr_izp_laiks.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/progr_izp_laiks.o progr_izp_laiks.cpp
 
 ${OBJECTDIR}/timer.o: timer.cpp 
 	${MKDIR} -p ${OBJECTDIR}
