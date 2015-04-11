@@ -1,0 +1,1 @@
+Modificeet uzdevumu ar datumiem (sk. L6Cpp) atbilstosi format_IO failu saturam.

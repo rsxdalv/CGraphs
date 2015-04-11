@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="L5CppSamples"
+                   displayName="L5CppSamples"
+                   projectFiles="true">
+      <logicalFolder name="1. Static" displayName="1. Static" projectFiles="true">
+        <itemPath>1. Static/Static.cpp</itemPath>
+        <itemPath>1. Static/Static.exe</itemPath>
+      </logicalFolder>
+      <logicalFolder name="2. Friends" displayName="2. Friends" projectFiles="true">
+        <itemPath>2. Friends/Friends.cpp</itemPath>
+        <itemPath>2. Friends/Friends.exe</itemPath>
+      </logicalFolder>
+      <logicalFolder name="3. This" displayName="3. This" projectFiles="true">
+        <itemPath>3. This/This.cpp</itemPath>
+        <itemPath>3. This/This.exe</itemPath>
+      </logicalFolder>
+      <logicalFolder name="4. Operatoru pardefinesana"
+                     displayName="4. Operatoru pardefinesana"
+                     projectFiles="true">
+        <itemPath>4. Operatoru pardefinesana/OperPard.cpp</itemPath>
+        <itemPath>4. Operatoru pardefinesana/OperPard.exe</itemPath>
+      </logicalFolder>
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="1. Static/Static.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="1. Static/Static.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="2. Friends/Friends.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="2. Friends/Friends.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="3. This/This.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="3. This/This.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="4. Operatoru pardefinesana/OperPard.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="4. Operatoru pardefinesana/OperPard.exe"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="1. Static/Static.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="1. Static/Static.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="2. Friends/Friends.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="2. Friends/Friends.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="3. This/This.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="3. This/This.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="4. Operatoru pardefinesana/OperPard.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="4. Operatoru pardefinesana/OperPard.exe"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

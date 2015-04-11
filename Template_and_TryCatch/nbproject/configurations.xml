@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="L21CPP" displayName="L21CPP" projectFiles="true">
+      <logicalFolder name="template" displayName="template" projectFiles="true">
+        <itemPath>template/template01.cpp</itemPath>
+        <itemPath>template/template01.exe</itemPath>
+        <itemPath>template/template02.cpp</itemPath>
+        <itemPath>template/template02.exe</itemPath>
+      </logicalFolder>
+      <logicalFolder name="trycatch" displayName="trycatch" projectFiles="true">
+        <itemPath>trycatch/trycatch01.cpp</itemPath>
+        <itemPath>trycatch/trycatch01.exe</itemPath>
+        <itemPath>trycatch/trycatch02.cpp</itemPath>
+        <itemPath>trycatch/trycatch02.exe</itemPath>
+        <itemPath>trycatch/trycatch03.cpp</itemPath>
+        <itemPath>trycatch/trycatch03.exe</itemPath>
+        <itemPath>trycatch/trycatch04.cpp</itemPath>
+        <itemPath>trycatch/trycatch04.exe</itemPath>
+      </logicalFolder>
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="template/template01.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="template/template01.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="template/template02.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="template/template02.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="trycatch/trycatch01.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch/trycatch01.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="trycatch/trycatch02.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch/trycatch02.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="trycatch/trycatch03.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch/trycatch03.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="trycatch/trycatch04.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch/trycatch04.exe" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="template/template01.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="template/template01.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="template/template02.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="template/template02.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="trycatch/trycatch01.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch/trycatch01.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="trycatch/trycatch02.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch/trycatch02.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="trycatch/trycatch03.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch/trycatch03.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="trycatch/trycatch04.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch/trycatch04.exe" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

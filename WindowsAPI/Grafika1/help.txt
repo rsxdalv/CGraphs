@@ -1,0 +1,6 @@
+http://msdn.microsoft.com/en-us/library/dd145203(VS.85).aspx
+http://www.functionx.com/win32/Lesson10.htm
+http://www.functionx.com/win32/Lesson11.htm
+
+Timer
+http://msdn.microsoft.com/en-us/library/windows/desktop/ms644900(v=vs.85).aspx
