@@ -59,11 +59,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/template_and_trycatch.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/trycatch.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/template_and_trycatch.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/trycatch.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/template_and_trycatch ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/trycatch ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/trycatch/trycatch01.o: trycatch/trycatch01.cpp 
 	${MKDIR} -p ${OBJECTDIR}/trycatch
@@ -91,7 +91,7 @@ ${OBJECTDIR}/trycatch/trycatch04.o: trycatch/trycatch04.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/template_and_trycatch.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/trycatch.exe
 
 # Subprojects
 .clean-subprojects:
