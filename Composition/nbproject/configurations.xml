@@ -4,10 +4,8 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-    </logicalFolder>
-    <logicalFolder name="L4Cpp" displayName="L4Cpp" projectFiles="true">
-      <itemPath>Makefile</itemPath>
-      <itemPath>TIMEstring.cpp</itemPath>
+      <itemPath>Date.h</itemPath>
+      <itemPath>Employee.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -16,7 +14,11 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>main.c</itemPath>
+      <itemPath>Date.cpp</itemPath>
+      <itemPath>Employee.cpp</itemPath>
+      <itemPath>Makefile_1</itemPath>
+      <itemPath>kompozicija.exe</itemPath>
+      <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -30,9 +32,6 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
-  <sourceRootList>
-    <Elem>.</Elem>
-  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
@@ -43,11 +42,19 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Makefile" ex="false" tool="3" flavor2="0">
+      <item path="Date.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="TIMEstring.cpp" ex="false" tool="3" flavor2="0">
+      <item path="Date.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="main.c" ex="false" tool="0" flavor2="0">
+      <item path="Employee.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Employee.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Makefile_1" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="kompozicija.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -70,11 +77,19 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Makefile" ex="false" tool="3" flavor2="0">
+      <item path="Date.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="TIMEstring.cpp" ex="false" tool="3" flavor2="0">
+      <item path="Date.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="main.c" ex="false" tool="0" flavor2="0">
+      <item path="Employee.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Employee.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Makefile_1" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="kompozicija.exe" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

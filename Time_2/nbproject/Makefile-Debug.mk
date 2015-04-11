@@ -35,9 +35,6 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Kompozicija/Date.o \
-	${OBJECTDIR}/Kompozicija/Employee.o \
-	${OBJECTDIR}/Kompozicija/main.o \
 	${OBJECTDIR}/main.o
 
 
@@ -63,22 +60,7 @@ LDLIBSOPTIONS=
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/time_2.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/time_2 ${OBJECTFILES} ${LDLIBSOPTIONS}
-
-${OBJECTDIR}/Kompozicija/Date.o: Kompozicija/Date.cpp 
-	${MKDIR} -p ${OBJECTDIR}/Kompozicija
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Kompozicija/Date.o Kompozicija/Date.cpp
-
-${OBJECTDIR}/Kompozicija/Employee.o: Kompozicija/Employee.cpp 
-	${MKDIR} -p ${OBJECTDIR}/Kompozicija
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Kompozicija/Employee.o Kompozicija/Employee.cpp
-
-${OBJECTDIR}/Kompozicija/main.o: Kompozicija/main.cpp 
-	${MKDIR} -p ${OBJECTDIR}/Kompozicija
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Kompozicija/main.o Kompozicija/main.cpp
+	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/time_2 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/main.o: main.c 
 	${MKDIR} -p ${OBJECTDIR}
