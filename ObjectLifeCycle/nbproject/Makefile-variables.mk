@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Visual_Studio_10-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Visual_Studio_10-Windows
-CND_ARTIFACT_NAME_Debug=time_2
-CND_ARTIFACT_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/time_2
+CND_ARTIFACT_NAME_Debug=objectlifecycle
+CND_ARTIFACT_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/objectlifecycle
 CND_PACKAGE_DIR_Debug=dist/Debug/Visual_Studio_10-Windows/package
-CND_PACKAGE_NAME_Debug=time2.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/package/time2.tar
+CND_PACKAGE_NAME_Debug=objectlifecycle.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/package/objectlifecycle.tar
 # Release configuration
 CND_PLATFORM_Release=Visual_Studio_10-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Visual_Studio_10-Windows
-CND_ARTIFACT_NAME_Release=time_2
-CND_ARTIFACT_PATH_Release=dist/Release/Visual_Studio_10-Windows/time_2
+CND_ARTIFACT_NAME_Release=objectlifecycle
+CND_ARTIFACT_PATH_Release=dist/Release/Visual_Studio_10-Windows/objectlifecycle
 CND_PACKAGE_DIR_Release=dist/Release/Visual_Studio_10-Windows/package
-CND_PACKAGE_NAME_Release=time2.tar
-CND_PACKAGE_PATH_Release=dist/Release/Visual_Studio_10-Windows/package/time2.tar
+CND_PACKAGE_NAME_Release=objectlifecycle.tar
+CND_PACKAGE_PATH_Release=dist/Release/Visual_Studio_10-Windows/package/objectlifecycle.tar
 #
 # include compiler specific variables
 #

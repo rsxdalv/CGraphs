@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Time_2
+PROJECTNAME=ObjectLifeCycle
 
 # Active Configuration
 DEFAULTCONF=Debug
