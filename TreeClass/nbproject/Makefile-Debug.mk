@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/koks.o \
+	${OBJECTDIR}/koks_1.o \
 	${OBJECTDIR}/tree_int.o \
 	${OBJECTDIR}/tree_string.o
 
@@ -68,6 +69,11 @@ ${OBJECTDIR}/koks.o: koks.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/koks.o koks.cpp
+
+${OBJECTDIR}/koks_1.o: koks_1.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/koks_1.o koks_1.cpp
 
 ${OBJECTDIR}/tree_int.o: tree_int.cpp 
 	${MKDIR} -p ${OBJECTDIR}

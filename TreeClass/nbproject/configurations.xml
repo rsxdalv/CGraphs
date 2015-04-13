@@ -20,7 +20,7 @@
                    projectFiles="true">
       <logicalFolder name="Koks" displayName="Koks" projectFiles="true">
         <itemPath>koks.cpp</itemPath>
-        <itemPath>koks.dev</itemPath>
+        <itemPath>koks_1.cpp</itemPath>
       </logicalFolder>
       <itemPath>tree_int.cpp</itemPath>
       <itemPath>tree_string.cpp</itemPath>
@@ -58,9 +58,9 @@
       </item>
       <item path="koks.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="koks.dev" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="koks.jpg" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="koks_1.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tree_int.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -95,9 +95,9 @@
       </item>
       <item path="koks.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="koks.dev" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="koks.jpg" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="koks_1.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tree_int.cpp" ex="false" tool="1" flavor2="0">
       </item>

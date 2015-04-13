@@ -34,7 +34,13 @@ include Makefile
 OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
-OBJECTFILES=
+OBJECTFILES= \
+	${OBJECTDIR}/ErrorKlase.o \
+	${OBJECTDIR}/trycatch01.o \
+	${OBJECTDIR}/trycatch02.o \
+	${OBJECTDIR}/trycatch03.o \
+	${OBJECTDIR}/trycatch04.o \
+	${OBJECTDIR}/trycatch06.o
 
 
 # C Compiler Flags
@@ -59,7 +65,37 @@ LDLIBSOPTIONS=
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/exceptions.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/exceptions ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/exceptions ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/ErrorKlase.o: ErrorKlase.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ErrorKlase.o ErrorKlase.cpp
+
+${OBJECTDIR}/trycatch01.o: trycatch01.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/trycatch01.o trycatch01.cpp
+
+${OBJECTDIR}/trycatch02.o: trycatch02.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/trycatch02.o trycatch02.cpp
+
+${OBJECTDIR}/trycatch03.o: trycatch03.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/trycatch03.o trycatch03.cpp
+
+${OBJECTDIR}/trycatch04.o: trycatch04.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/trycatch04.o trycatch04.cpp
+
+${OBJECTDIR}/trycatch06.o: trycatch06.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/trycatch06.o trycatch06.cpp
 
 # Subprojects
 .build-subprojects:

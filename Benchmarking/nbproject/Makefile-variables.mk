@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Visual_Studio_10-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Visual_Studio_10-Windows
-CND_ARTIFACT_NAME_Debug=benchmark_2
-CND_ARTIFACT_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/benchmark_2
+CND_ARTIFACT_NAME_Debug=benchmarking
+CND_ARTIFACT_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/benchmarking
 CND_PACKAGE_DIR_Debug=dist/Debug/Visual_Studio_10-Windows/package
-CND_PACKAGE_NAME_Debug=benchmark2.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/package/benchmark2.tar
+CND_PACKAGE_NAME_Debug=benchmarking.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/package/benchmarking.tar
 # Release configuration
 CND_PLATFORM_Release=Visual_Studio_10-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Visual_Studio_10-Windows
-CND_ARTIFACT_NAME_Release=benchmark_2
-CND_ARTIFACT_PATH_Release=dist/Release/Visual_Studio_10-Windows/benchmark_2
+CND_ARTIFACT_NAME_Release=benchmarking
+CND_ARTIFACT_PATH_Release=dist/Release/Visual_Studio_10-Windows/benchmarking
 CND_PACKAGE_DIR_Release=dist/Release/Visual_Studio_10-Windows/package
-CND_PACKAGE_NAME_Release=benchmark2.tar
-CND_PACKAGE_PATH_Release=dist/Release/Visual_Studio_10-Windows/package/benchmark2.tar
+CND_PACKAGE_NAME_Release=benchmarking.tar
+CND_PACKAGE_PATH_Release=dist/Release/Visual_Studio_10-Windows/package/benchmarking.tar
 #
 # include compiler specific variables
 #

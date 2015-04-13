@@ -12,6 +12,12 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>ErrorKlase.cpp</itemPath>
+      <itemPath>trycatch01.cpp</itemPath>
+      <itemPath>trycatch02.cpp</itemPath>
+      <itemPath>trycatch03.cpp</itemPath>
+      <itemPath>trycatch04.cpp</itemPath>
+      <itemPath>trycatch06.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -35,6 +41,18 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="ErrorKlase.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch01.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch02.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch03.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch04.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch06.cpp" ex="false" tool="1" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -56,6 +74,18 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="ErrorKlase.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch01.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch02.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch03.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch04.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="trycatch06.cpp" ex="false" tool="1" flavor2="0">
+      </item>
     </conf>
   </confs>
 </configurationDescriptor>

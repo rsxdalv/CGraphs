@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=GraphicProjections
+PROJECTNAME=VectorProjections
 
 # Active Configuration
 DEFAULTCONF=Debug

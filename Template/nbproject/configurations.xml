@@ -12,19 +12,10 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <logicalFolder name="template" displayName="template" projectFiles="true">
-        <logicalFolder name="Koks" displayName="Koks" projectFiles="true">
-          <itemPath>koks.cpp</itemPath>
-          <itemPath>koks.dev</itemPath>
-        </logicalFolder>
-        <itemPath>template01.cpp</itemPath>
-        <itemPath>template01.exe</itemPath>
-        <itemPath>template02.cpp</itemPath>
-        <itemPath>template02.exe</itemPath>
-        <itemPath>template03.cpp</itemPath>
-        <itemPath>template04.cpp</itemPath>
-        <itemPath>template04.exe</itemPath>
-      </logicalFolder>
+      <itemPath>template01.cpp</itemPath>
+      <itemPath>template02.cpp</itemPath>
+      <itemPath>template03.cpp</itemPath>
+      <itemPath>template04.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -48,23 +39,13 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="koks.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="koks.dev" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="template01.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="template01.exe" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="template02.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="template02.exe" ex="false" tool="3" flavor2="0">
       </item>
       <item path="template03.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="template04.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="template04.exe" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -87,23 +68,13 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="koks.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="koks.dev" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="template01.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="template01.exe" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="template02.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="template02.exe" ex="false" tool="3" flavor2="0">
       </item>
       <item path="template03.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="template04.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="template04.exe" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

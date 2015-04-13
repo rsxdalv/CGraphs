@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
-    <logicalFolder name="HeaderFiles"
-                   displayName="Header Files"
-                   projectFiles="true">
-    </logicalFolder>
-    <logicalFolder name="ResourceFiles"
-                   displayName="Resource Files"
-                   projectFiles="true">
-    </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>CAD_TEST.cpp</itemPath>
-      <itemPath>CAD_TEST.o</itemPath>
       <itemPath>CREATE.H</itemPath>
       <itemPath>CREATE.cpp</itemPath>
-      <itemPath>CREATE.o</itemPath>
-      <itemPath>Makefile</itemPath>
-      <itemPath>Makefile.win</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -44,17 +32,9 @@
       </compileType>
       <item path="CAD_TEST.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="CAD_TEST.o" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="CREATE.H" ex="false" tool="3" flavor2="0">
       </item>
       <item path="CREATE.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="CREATE.o" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Makefile" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Makefile.win" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -79,17 +59,9 @@
       </compileType>
       <item path="CAD_TEST.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="CAD_TEST.o" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="CREATE.H" ex="false" tool="3" flavor2="0">
       </item>
       <item path="CREATE.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="CREATE.o" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Makefile" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Makefile.win" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

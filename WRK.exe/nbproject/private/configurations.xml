@@ -1,59 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="95">
-  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
-    <df root="." name="0">
-      <df name="3. Mantosana">
-        <df name="1">
-          <in>POINT.H</in>
-          <in>main.cpp</in>
-        </df>
-        <df name="2">
-          <in>CIRCLE.H</in>
-          <in>CYLINDER.h</in>
-          <in>POINT.H</in>
-          <in>main.cpp</in>
-        </df>
-        <df name="2_v2">
-          <in>CIRCLE.H</in>
-          <in>CYLINDER.h</in>
-          <in>POINT.H</in>
-          <in>main.cpp</in>
-        </df>
-      </df>
-      <df name="Uzdevums">
-        <in>HWorker.h</in>
-        <in>WWorker.cpp</in>
-        <in>WWorker.h</in>
-        <in>Worker.h</in>
-        <in>main.cpp</in>
-      </df>
-      <df name="VirtualClass">
-        <df name="Assignment">
-          <in>BEtalons.cpp</in>
-          <in>BEtalons.h</in>
-          <in>DEtalons.cpp</in>
-          <in>DEtalons.h</in>
-          <in>Etalons.h</in>
-          <in>PEtalons.cpp</in>
-          <in>PEtalons.h</in>
-          <in>main.cpp</in>
-        </df>
-        <in>CIRCLE.H</in>
-        <in>CYLINDER.H</in>
-        <in>POINT.H</in>
-        <in>SHAPE.H</in>
-        <in>main.cpp</in>
-      </df>
-      <in>cilveks.cpp</in>
-      <in>cilveks.h</in>
-      <in>main.cpp</in>
-      <in>skolens.cpp</in>
-      <in>skolens.h</in>
-      <in>students.cpp</in>
-      <in>students.h</in>
-    </df>
-  </logicalFolder>
-  <projectmakefile>Makefile.win</projectmakefile>
+  <projectmakefile></projectmakefile>
   <confs>
     <conf name="Default" type="0">
       <toolsSet>
@@ -92,7 +39,7 @@
           <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
         </runcommandpicklist>
         <runcommand>"${OUTPUT_PATH}"</runcommand>
-        <rundir>.</rundir>
+        <rundir>../Inheritance/Uzdevums</rundir>
         <buildfirst>false</buildfirst>
         <terminal-type>0</terminal-type>
         <remove-instrumentation>0</remove-instrumentation>

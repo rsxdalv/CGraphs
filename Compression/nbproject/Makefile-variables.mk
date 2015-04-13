@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Visual_Studio_10-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Visual_Studio_10-Windows
-CND_ARTIFACT_NAME_Debug=compress_1
-CND_ARTIFACT_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/compress_1
+CND_ARTIFACT_NAME_Debug=compression
+CND_ARTIFACT_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/compression
 CND_PACKAGE_DIR_Debug=dist/Debug/Visual_Studio_10-Windows/package
-CND_PACKAGE_NAME_Debug=compress1.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/package/compress1.tar
+CND_PACKAGE_NAME_Debug=compression.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/package/compression.tar
 # Release configuration
 CND_PLATFORM_Release=Visual_Studio_10-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Visual_Studio_10-Windows
-CND_ARTIFACT_NAME_Release=compress_1
-CND_ARTIFACT_PATH_Release=dist/Release/Visual_Studio_10-Windows/compress_1
+CND_ARTIFACT_NAME_Release=compression
+CND_ARTIFACT_PATH_Release=dist/Release/Visual_Studio_10-Windows/compression
 CND_PACKAGE_DIR_Release=dist/Release/Visual_Studio_10-Windows/package
-CND_PACKAGE_NAME_Release=compress1.tar
-CND_PACKAGE_PATH_Release=dist/Release/Visual_Studio_10-Windows/package/compress1.tar
+CND_PACKAGE_NAME_Release=compression.tar
+CND_PACKAGE_PATH_Release=dist/Release/Visual_Studio_10-Windows/package/compression.tar
 #
 # include compiler specific variables
 #

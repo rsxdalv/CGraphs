@@ -1,43 +1,35 @@
 #include <iostream>
-#include <string>
-using namespace std;
+#include "shape.h"
+#include "point.h"
+#include "circle.h"
+#include "cylinder.h"
 
-#include "Etalons.h"
-#include "DEtalons.h"
-#include "BEtalons.h"
-#include "PEtalons.h"
+using namespace std;
 
 int main()
 {
-   DienETalons Etalons1;
-   MultiETalons Etalons2(1.1,3);
-   PersonETalons Etalons3("Janis","Juris",1,1.5);
-   ETalons *KopEtalons[3];
-   KopEtalons[0]=&Etalons1;
-   KopEtalons[1]=&Etalons2;
-   KopEtalons[2]=&Etalons3;
-   Etalons1.Used();
-   Etalons1.Print();
-   Etalons2.Use();
-   Etalons2.Use();
-   Etalons2.Print();
-   Etalons3.Print();
-   Etalons1.Used();
-   Etalons3.Add(1);
-   Etalons3.Add(1);
-   Etalons3.Add(2);
-   Etalons3.Use();
-   Etalons3.Use();
-   Etalons3.Use();
-   cout<<endl<<endl;
-   for(int a=0;a<3;a++)
+   //Shape shape; //abstrakta klase - nevar veidot objektus
+   Point point(7, 11);
+   Circle circle(3.5, 22, 8);
+   Cylinder cylinder(10, 3.3, 10, 10);
+
+   point.printShapeName();
+   circle.printShapeName();
+   cylinder.printShapeName();
+   cout << endl;
+
+   Shape *arrayOfShapes[3];
+   arrayOfShapes[0] = &point;
+   arrayOfShapes[1] = &circle;
+   arrayOfShapes[2] = &cylinder;
+
+   for (int i=0; i<3; i++)
    {
-      for(int b=0;b<5;b++){
-      KopEtalons[a]->Print();
-      KopEtalons[a]->Use();}
-   }   
-   //KopEtalons[0] = &Etalons1;
-   cout<<endl<<endl;
-   system("PAUSE");
-   return 1;
-}   
+      arrayOfShapes[i]->printShapeName();
+      cout<<arrayOfShapes[i]->getX()<<" "<<arrayOfShapes[i]->getY()<<endl;
+      cout << "Laukums: " << arrayOfShapes[i]->area() << endl;
+      cout << "Tilpums: " << arrayOfShapes[i]->volume() << endl << endl;
+   }
+  system("PAUSE");	
+  return 0;
+}

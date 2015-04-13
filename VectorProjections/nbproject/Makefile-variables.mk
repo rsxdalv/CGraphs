@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Visual_Studio_10-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Visual_Studio_10-Windows
-CND_ARTIFACT_NAME_Debug=graphicprojections
-CND_ARTIFACT_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/graphicprojections
+CND_ARTIFACT_NAME_Debug=vectorprojections
+CND_ARTIFACT_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/vectorprojections
 CND_PACKAGE_DIR_Debug=dist/Debug/Visual_Studio_10-Windows/package
-CND_PACKAGE_NAME_Debug=graphicprojections.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/package/graphicprojections.tar
+CND_PACKAGE_NAME_Debug=vectorprojections.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/package/vectorprojections.tar
 # Release configuration
 CND_PLATFORM_Release=Visual_Studio_10-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Visual_Studio_10-Windows
-CND_ARTIFACT_NAME_Release=graphicprojections
-CND_ARTIFACT_PATH_Release=dist/Release/Visual_Studio_10-Windows/graphicprojections
+CND_ARTIFACT_NAME_Release=vectorprojections
+CND_ARTIFACT_PATH_Release=dist/Release/Visual_Studio_10-Windows/vectorprojections
 CND_PACKAGE_DIR_Release=dist/Release/Visual_Studio_10-Windows/package
-CND_PACKAGE_NAME_Release=graphicprojections.tar
-CND_PACKAGE_PATH_Release=dist/Release/Visual_Studio_10-Windows/package/graphicprojections.tar
+CND_PACKAGE_NAME_Release=vectorprojections.tar
+CND_PACKAGE_PATH_Release=dist/Release/Visual_Studio_10-Windows/package/vectorprojections.tar
 #
 # include compiler specific variables
 #

@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Visual_Studio_10-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Visual_Studio_10-Windows
-CND_ARTIFACT_NAME_Debug=composition
-CND_ARTIFACT_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/composition
+CND_ARTIFACT_NAME_Debug=classcomposition
+CND_ARTIFACT_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/classcomposition
 CND_PACKAGE_DIR_Debug=dist/Debug/Visual_Studio_10-Windows/package
-CND_PACKAGE_NAME_Debug=composition.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/package/composition.tar
+CND_PACKAGE_NAME_Debug=classcomposition.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/package/classcomposition.tar
 # Release configuration
 CND_PLATFORM_Release=Visual_Studio_10-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Visual_Studio_10-Windows
-CND_ARTIFACT_NAME_Release=composition
-CND_ARTIFACT_PATH_Release=dist/Release/Visual_Studio_10-Windows/composition
+CND_ARTIFACT_NAME_Release=classcomposition
+CND_ARTIFACT_PATH_Release=dist/Release/Visual_Studio_10-Windows/classcomposition
 CND_PACKAGE_DIR_Release=dist/Release/Visual_Studio_10-Windows/package
-CND_PACKAGE_NAME_Release=composition.tar
-CND_PACKAGE_PATH_Release=dist/Release/Visual_Studio_10-Windows/package/composition.tar
+CND_PACKAGE_NAME_Release=classcomposition.tar
+CND_PACKAGE_PATH_Release=dist/Release/Visual_Studio_10-Windows/package/classcomposition.tar
 #
 # include compiler specific variables
 #

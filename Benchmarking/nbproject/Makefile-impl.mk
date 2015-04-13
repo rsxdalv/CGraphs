@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Benchmark_2
+PROJECTNAME=Benchmarking
 
 # Active Configuration
 DEFAULTCONF=Debug

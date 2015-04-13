@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Visual_Studio_10-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Visual_Studio_10-Windows
-CND_ARTIFACT_NAME_Debug=customstringclass
-CND_ARTIFACT_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/customstringclass
+CND_ARTIFACT_NAME_Debug=datastructures
+CND_ARTIFACT_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/datastructures
 CND_PACKAGE_DIR_Debug=dist/Debug/Visual_Studio_10-Windows/package
-CND_PACKAGE_NAME_Debug=customstringclass.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/package/customstringclass.tar
+CND_PACKAGE_NAME_Debug=datastructures.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Visual_Studio_10-Windows/package/datastructures.tar
 # Release configuration
 CND_PLATFORM_Release=Visual_Studio_10-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Visual_Studio_10-Windows
-CND_ARTIFACT_NAME_Release=customstringclass
-CND_ARTIFACT_PATH_Release=dist/Release/Visual_Studio_10-Windows/customstringclass
+CND_ARTIFACT_NAME_Release=datastructures
+CND_ARTIFACT_PATH_Release=dist/Release/Visual_Studio_10-Windows/datastructures
 CND_PACKAGE_DIR_Release=dist/Release/Visual_Studio_10-Windows/package
-CND_PACKAGE_NAME_Release=customstringclass.tar
-CND_PACKAGE_PATH_Release=dist/Release/Visual_Studio_10-Windows/package/customstringclass.tar
+CND_PACKAGE_NAME_Release=datastructures.tar
+CND_PACKAGE_PATH_Release=dist/Release/Visual_Studio_10-Windows/package/datastructures.tar
 #
 # include compiler specific variables
 #
