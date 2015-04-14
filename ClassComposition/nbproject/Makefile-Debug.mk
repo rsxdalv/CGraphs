@@ -36,7 +36,12 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Date.o \
+	${OBJECTDIR}/Date_1.o \
 	${OBJECTDIR}/Employee.o \
+	${OBJECTDIR}/Friends.o \
+	${OBJECTDIR}/OperPard.o \
+	${OBJECTDIR}/Static.o \
+	${OBJECTDIR}/This.o \
 	${OBJECTDIR}/main.o
 
 
@@ -69,10 +74,35 @@ ${OBJECTDIR}/Date.o: Date.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Date.o Date.cpp
 
+${OBJECTDIR}/Date_1.o: Date_1.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Date_1.o Date_1.cpp
+
 ${OBJECTDIR}/Employee.o: Employee.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Employee.o Employee.cpp
+
+${OBJECTDIR}/Friends.o: Friends.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Friends.o Friends.cpp
+
+${OBJECTDIR}/OperPard.o: OperPard.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OperPard.o OperPard.cpp
+
+${OBJECTDIR}/Static.o: Static.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Static.o Static.cpp
+
+${OBJECTDIR}/This.o: This.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/This.o This.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}

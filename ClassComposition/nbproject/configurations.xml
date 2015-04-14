@@ -10,14 +10,18 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>uzdevums.doc</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>Date.cpp</itemPath>
+      <itemPath>Date_1.cpp</itemPath>
       <itemPath>Employee.cpp</itemPath>
-      <itemPath>Makefile_1</itemPath>
-      <itemPath>kompozicija.exe</itemPath>
+      <itemPath>Friends.cpp</itemPath>
+      <itemPath>OperPard.cpp</itemPath>
+      <itemPath>Static.cpp</itemPath>
+      <itemPath>This.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -46,15 +50,23 @@
       </item>
       <item path="Date.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Date_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="Employee.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Employee.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Makefile_1" ex="false" tool="3" flavor2="0">
+      <item path="Friends.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="kompozicija.exe" ex="false" tool="3" flavor2="0">
+      <item path="OperPard.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Static.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="This.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="uzdevums.doc" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -81,15 +93,23 @@
       </item>
       <item path="Date.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Date_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="Employee.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Employee.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Makefile_1" ex="false" tool="3" flavor2="0">
+      <item path="Friends.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="kompozicija.exe" ex="false" tool="3" flavor2="0">
+      <item path="OperPard.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Static.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="This.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="uzdevums.doc" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>
