@@ -36,7 +36,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/CAD_TEST.o \
-	${OBJECTDIR}/CREATE.o
+	${OBJECTDIR}/CREATE.o \
+	${OBJECTDIR}/OperPard.o \
+	${OBJECTDIR}/This.o
 
 
 # C Compiler Flags
@@ -57,11 +59,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/objectlifecycle.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/classproperties.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/objectlifecycle.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/classproperties.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/objectlifecycle ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/classproperties ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/CAD_TEST.o: CAD_TEST.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -73,13 +75,23 @@ ${OBJECTDIR}/CREATE.o: CREATE.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CREATE.o CREATE.cpp
 
+${OBJECTDIR}/OperPard.o: OperPard.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OperPard.o OperPard.cpp
+
+${OBJECTDIR}/This.o: This.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/This.o This.cpp
+
 # Subprojects
 .build-subprojects:
 
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/objectlifecycle.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/classproperties.exe
 
 # Subprojects
 .clean-subprojects:

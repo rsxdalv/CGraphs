@@ -35,14 +35,12 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/CompositionTest.o \
 	${OBJECTDIR}/Date.o \
-	${OBJECTDIR}/Date_1.o \
 	${OBJECTDIR}/Employee.o \
 	${OBJECTDIR}/Friends.o \
-	${OBJECTDIR}/OperPard.o \
-	${OBJECTDIR}/Static.o \
-	${OBJECTDIR}/This.o \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/OperatorOverloading.o \
+	${OBJECTDIR}/Static.o
 
 
 # C Compiler Flags
@@ -69,15 +67,15 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/classcomposition.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/classcomposition ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/CompositionTest.o: CompositionTest.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CompositionTest.o CompositionTest.cpp
+
 ${OBJECTDIR}/Date.o: Date.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Date.o Date.cpp
-
-${OBJECTDIR}/Date_1.o: Date_1.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Date_1.o Date_1.cpp
 
 ${OBJECTDIR}/Employee.o: Employee.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -89,25 +87,15 @@ ${OBJECTDIR}/Friends.o: Friends.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Friends.o Friends.cpp
 
-${OBJECTDIR}/OperPard.o: OperPard.cpp 
+${OBJECTDIR}/OperatorOverloading.o: OperatorOverloading.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OperPard.o OperPard.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OperatorOverloading.o OperatorOverloading.cpp
 
 ${OBJECTDIR}/Static.o: Static.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Static.o Static.cpp
-
-${OBJECTDIR}/This.o: This.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/This.o This.cpp
-
-${OBJECTDIR}/main.o: main.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:

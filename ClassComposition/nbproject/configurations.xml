@@ -15,14 +15,12 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>CompositionTest.cpp</itemPath>
       <itemPath>Date.cpp</itemPath>
-      <itemPath>Date_1.cpp</itemPath>
       <itemPath>Employee.cpp</itemPath>
       <itemPath>Friends.cpp</itemPath>
-      <itemPath>OperPard.cpp</itemPath>
+      <itemPath>OperatorOverloading.cpp</itemPath>
       <itemPath>Static.cpp</itemPath>
-      <itemPath>This.cpp</itemPath>
-      <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -46,11 +44,11 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="CompositionTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="Date.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Date.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Date_1.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Employee.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -58,13 +56,9 @@
       </item>
       <item path="Friends.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="OperPard.cpp" ex="false" tool="1" flavor2="0">
+      <item path="OperatorOverloading.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Static.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="This.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="uzdevums.doc" ex="false" tool="3" flavor2="0">
       </item>
@@ -89,11 +83,11 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="CompositionTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="Date.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Date.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Date_1.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Employee.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -101,13 +95,9 @@
       </item>
       <item path="Friends.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="OperPard.cpp" ex="false" tool="1" flavor2="0">
+      <item path="OperatorOverloading.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Static.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="This.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="uzdevums.doc" ex="false" tool="3" flavor2="0">
       </item>

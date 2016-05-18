@@ -35,8 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/progr_izp_laiks.o \
-	${OBJECTDIR}/timer.o
+	${OBJECTDIR}/QPerfCounter_Sorting.o
 
 
 # C Compiler Flags
@@ -63,15 +62,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/benchmarking.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/benchmarking ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/progr_izp_laiks.o: progr_izp_laiks.cpp 
+${OBJECTDIR}/QPerfCounter_Sorting.o: QPerfCounter_Sorting.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/progr_izp_laiks.o progr_izp_laiks.cpp
-
-${OBJECTDIR}/timer.o: timer.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/timer.o timer.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/QPerfCounter_Sorting.o QPerfCounter_Sorting.cpp
 
 # Subprojects
 .build-subprojects:

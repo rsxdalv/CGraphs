@@ -1,0 +1,29 @@
+# Project: client
+# Makefile created by Dev-C++ 4.9.9.0
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = main.o $(RES)
+LINKOBJ  = main.o $(RES)
+LIBS =  -L"C:/Progr/Dev-Cpp/lib"  ../../../../lib/libwsock32.a ../../../../lib/libws2_32.a  
+INCS =  -I"C:/Progr/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Progr/Dev-Cpp/include/c++/3.3.1"  -I"C:/Progr/Dev-Cpp/include/c++/3.3.1/mingw32"  -I"C:/Progr/Dev-Cpp/include/c++/3.3.1/backward"  -I"C:/Progr/Dev-Cpp/lib/gcc-lib/mingw32/3.3.1/include"  -I"C:/Progr/Dev-Cpp/include" 
+BIN  = client.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before client.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "client.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
