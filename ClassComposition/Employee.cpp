@@ -11,16 +11,6 @@ Employee::Employee(//char *first, char *last, int bd, int bm, int by, int hd, in
      hireDate(hd, hm, hy)    // hireDateba inicializaacija
 {
 
-   //int length = strlen( first );
-   //length = ( length < 25 ? length : 24 );
-   //strncpy( firstName, first, length );
-   //firstName[ length ] = '\0';
-
-   //length = strlen( last );
-   //length = ( length < 25 ? length : 24 );
-   //strncpy( lastName, last, length );
-   //lastName[ length ] = '\0';
-
    firstName = first;
    lastName = last;
 
