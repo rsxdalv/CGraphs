@@ -71,17 +71,15 @@ int main(int argc, char **argv)
     int index = SIZE - 1;  // Reverse tracking index
     Path[0] = index;
 
-    for (int g = 0; g < SIZE; g++)
-    {
-        if (index != g && Distance[index] == (Matrix[index][g] + Distance[g]) )
+    for (int i = 0; i < SIZE; i++)
+        if (index != i && Distance[index] == (Matrix[index][i] + Distance[i]) )
         {
-            if (g != 0)
-                index = g;
+            if (i != 0)
+                index = i;
             else
                 break;
-            Path[of++] = g;
+            Path[of++] = i;
         }
-    }
 
 
     int ReversePath[of]; // Masivs ar jau atrasto isako celu.
