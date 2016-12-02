@@ -5,9 +5,10 @@ struct link
     int source, size;
 };
 
-#define MAX_VALUE 2048
-#define _ MAX_VALUE
+#define inf 2048
+#define _ inf
 #define SIZED 7
+#define MAYBE -1
 
 int main()
 {
@@ -23,7 +24,7 @@ int main()
     int visited[SIZED] = {0};
     struct link Mi[SIZED];
     for (int a = 0; a < SIZED; a++)
-        Mi[a] = (struct link){.source = -1, .size = MAX_VALUE};
+        Mi[a] = (struct link){.source = -1, .size = inf};
 
     int next = 0;
     int length = 0;
@@ -33,9 +34,8 @@ int main()
 
     for (int count = 1; count < SIZED; count++)
     {
-
-        int minn = _;
-        int alpha = -1, beta = -1;
+        int minimum = _;
+        int alpha = MAYBE, beta = MAYBE;
         for (int i = 0; i < SIZED; i++)
         { // Pret katru virsotni
             for (int k = i + 1; k < SIZED; k++)
@@ -43,31 +43,29 @@ int main()
                 if (!visited[k] || visited[i] != visited[k])
                     //Ja viena no virstonem ir neiezimeta
                     //atskirigas grupas virsotnes
-                    if (Matrix[i][k] < minn)
+                    if (Matrix[i][k] < minimum)
                     {
                         //ir loks mazaks par min
                         alpha = i;
                         beta = k;
-                        minn = Matrix[i][k];
+                        minimum = Matrix[i][k];
                     }
             }
         }
-        if (alpha == -1 || beta == -1)
+        if (alpha == MAYBE || beta == MAYBE)
             printf("Unreachable vertice!\n");
-        if (minn == _)
-            printf("Error, minn == inf\n");
+        if (minimum == inf)
+            printf("Error, minimum == inf\n");
         else
             length += Matrix[alpha][beta];
-        if (visited[alpha] == 0)
+        if (!visited[alpha])
         {
-            if (visited[beta] == 0)
-            {
+            if (!visited[beta])
                 visited[alpha] = visited[beta] = ++groupn;
-            }
             else
                 visited[alpha] = visited[beta];
         }
-        else if (visited[beta] == 0)
+        else if (!visited[beta])
             visited[beta] = visited[alpha];
         else
         {
