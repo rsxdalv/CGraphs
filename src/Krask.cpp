@@ -56,9 +56,9 @@ int main()
             }
         }
         if (alpha == -1 || beta == -1)
-            cout << "Nesasniedzama virsotne!" << endl;
+            printf("Unreachable vertice!\n");
         if (minn == _)
-            cout << "kluuda!" << endl;
+            printf("Error, minn == inf\n");
         else
             length += Matrix[alpha][beta];
         if (mark[alpha] == 0)
