@@ -1,12 +1,12 @@
 #include <stdio.h>
+#include <stdbool.h>
 #define inf 0x7FFF
 #define _ inf
 #define min(A, B) ((A) < (B) ? (A) : (B))
+#define Ms 6 // Only for initialization
 
 int main(int argc, char **argv)
 {
-    const int Ms = 6;
-
     int Matrix[Ms][Ms] = {
         0, 4, 2, _, _, _,
         4, 0, 1, 3, _, _,
@@ -14,9 +14,10 @@ int main(int argc, char **argv)
         _, 3, 8, 0, 2, _,
         _, _, 10, 2, 0, _,
         _, _, _, _, _, 0};
+
     unsigned int Iter[Ms];
     
-    bool cst[Ms] = { true }
+    bool cst[Ms] = { true };
 
     // initialize Iter
     Iter[0] = 0;
