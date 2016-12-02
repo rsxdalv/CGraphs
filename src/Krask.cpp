@@ -26,7 +26,7 @@ int main()
     int mark[sized] = {0};
     link Mi[sized] = {MAX_VALUE};
     for(int a=0;a<sized;a++)
-        Mi[a] = (struct link) {.source = -1, .size = MAX_VALUE}
+        Mi[a] = (struct link) {.source = -1, .size = MAX_VALUE};
 
     int next=0;
     int length=0;
