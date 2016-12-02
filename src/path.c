@@ -7,6 +7,8 @@
 
 int main(int argc, char **argv)
 {
+    ////
+    // Input data
     int Matrix[Ms][Ms] = {
         0, 4, 2, _, _, _,
         4, 0, 1, 3, _, _,
@@ -15,7 +17,8 @@ int main(int argc, char **argv)
         _, _, 10, 2, 0, 3,
         _, _, _, 6, 3, 0};
 
-    
+    ////
+    // Initializators
     bool constant[Ms] = { true };
 
     // initialize Distance
@@ -26,13 +29,13 @@ int main(int argc, char **argv)
 
     ////
     // Get Distance from origin to all vertices
-    for(unsigned int distance_iter = 0; true; ) // distance_iter -> Distanceātors
+    for(unsigned int min_path_i = 0; true; ) // min_path_i -> Distanceātors
     {
         for (int i = 0; i < Ms; i++)
         {
             //Jaunais = min esošais pret esošā ceļa attālumu + ceļa garums
-            Distance[i] = min(Distance[i], Distance[distance_iter] + Matrix[distance_iter][i]);
-            printf("Minumum %d %d %d\n", distance_iter, i + 1, Distance[i]);
+            Distance[i] = min(Distance[i], Distance[min_path_i] + Matrix[min_path_i][i]);
+            printf("Minumum %d %d %d\n", min_path_i, i + 1, Distance[i]);
         }
         //Atrast min nekonst
         int n = inf;
@@ -41,12 +44,11 @@ int main(int argc, char **argv)
             if (!constant[i] && n > Distance[i])
             {
                 n = Distance[i];
-                distance_iter = i;
-                printf("Not const %d %d\n", distance_iter, n);
+                min_path_i = i;
             }
         }
-        printf("Found vertice? %d %d\n", distance_iter, Distance[distance_iter]);
-        constant[distance_iter] = true;
+        printf("Found vertice? %d %d\n", min_path_i, Distance[min_path_i]);
+        constant[min_path_i] = true;
         if (n == inf)
             break;
     }
