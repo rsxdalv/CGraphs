@@ -21,7 +21,7 @@ int main()
         _,	_,	_,	7,	9,	_,	0};
 
     int mark[SIZED] = {0};
-    link Mi[SIZED] = {MAX_VALUE};
+    struct link Mi[SIZED] = {MAX_VALUE};
     for (int a = 0; a < SIZED; a++)
         Mi[a] = (struct link){.source = -1, .size = MAX_VALUE};
 

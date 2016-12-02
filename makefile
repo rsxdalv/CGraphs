@@ -8,7 +8,7 @@ path.exe:
 	./build/path.exe
 
 krask:
-	g++ ./src/Krask.cpp -o ./build/krask.exe
+	gcc ./src/Krask.c -o ./build/krask.exe
 
 krask.exe:
 	./build/krask.exe
