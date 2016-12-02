@@ -17,15 +17,15 @@ int main(int argc, char **argv)
 
     unsigned int Iter[Ms];
     
-    bool cst[Ms] = { true };
+    bool constant[Ms] = { true };
 
     // initialize Iter
     Iter[0] = 0;
     for (int i = 1; i < Ms; i++)
         Iter[i] = inf;
 
-    unsigned int ite = 0, cn = 1;
-    while (cn) // ite -> iterātors, cn -> izeja
+    unsigned int ite = 0;
+    while (1) // ite -> iterātors, cn -> izeja
     {
         for (int j = 0; j < Ms; j++)
         {
@@ -38,7 +38,7 @@ int main(int argc, char **argv)
         for (int k = 1; k < Ms; k++)
         {
             // Ja nav konst
-            if (!cst[k])
+            if (!constant[k])
                 if (n > Iter[k])
                 {
                     n = Iter[k];
@@ -47,10 +47,9 @@ int main(int argc, char **argv)
                 }
         }
         printf("MNK %d %d\n", ite, Iter[ite]);
+        constant[ite] = true;
         if (n == inf)
-            cn = false;
-
-        cst[ite] = true;
+            break;
     }
 
     for (int i = 0; i < Ms; i++)
@@ -66,7 +65,7 @@ int main(int argc, char **argv)
     int Order[Ms];
     int of = 1;
     Order[0] = ind;
-    cn = 1;
+    int cn = 1;
 
     while (cn)
     {
