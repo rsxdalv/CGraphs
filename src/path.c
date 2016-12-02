@@ -24,13 +24,15 @@ int main(int argc, char **argv)
     for (int i = 1; i < Ms; i++)
         Distance[i] = inf;
 
+    ////
+    // Get Distance from origin to all vertices
     for(unsigned int distance_iter = 0; true; ) // distance_iter -> Distanceātors
     {
         for (int i = 0; i < Ms; i++)
         {
             //Jaunais = min esošais pret esošā ceļa attālumu + ceļa garums
             Distance[i] = min(Distance[i], Distance[distance_iter] + Matrix[distance_iter][i]);
-            printf("MIN %d %d %d\n", distance_iter, i + 1, Distance[i]);
+            printf("Minumum %d %d %d\n", distance_iter, i + 1, Distance[i]);
         }
         //Atrast min nekonst
         int n = inf;
@@ -40,23 +42,26 @@ int main(int argc, char **argv)
             {
                 n = Distance[i];
                 distance_iter = i;
-                printf("NEK %d %d\n", distance_iter, n);
+                printf("Not const %d %d\n", distance_iter, n);
             }
         }
-        printf("MNK %d %d\n", distance_iter, Distance[distance_iter]);
+        printf("Found vertice? %d %d\n", distance_iter, Distance[distance_iter]);
         constant[distance_iter] = true;
         if (n == inf)
             break;
     }
 
+    ////
+    // Output all distances
     for (int i = 0; i < Ms; i++)
         (Distance[i] == inf) ? printf("_\t") : printf("%d\t", Distance[i]);
-    
     printf("\n");
     
-    int ind = Ms - 1;
+    ////
+    // Transform data to something
     int Order[Ms];
     int of = 1;
+    int ind = Ms - 1;
     Order[0] = ind;
 
     for (int g = 0; g < Ms; g++)
