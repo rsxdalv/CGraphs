@@ -24,23 +24,22 @@ int main(int argc, char **argv)
     for (int i = 1; i < Ms; i++)
         Distance[i] = inf;
 
-    unsigned int distance_iter = 0;
-    while (1) // distance_iter -> Distanceātors
+    for(unsigned int distance_iter = 0; true; ) // distance_iter -> Distanceātors
     {
-        for (int j = 0; j < Ms; j++)
+        for (int i = 0; i < Ms; i++)
         {
             //Jaunais = min esošais pret esošā ceļa attālumu + ceļa garums
-            Distance[j] = min(Distance[j], Distance[distance_iter] + Matrix[distance_iter][j]);
-            printf("MIN %d %d %d\n", distance_iter, j + 1, Distance[j]);
+            Distance[i] = min(Distance[i], Distance[distance_iter] + Matrix[distance_iter][i]);
+            printf("MIN %d %d %d\n", distance_iter, i + 1, Distance[i]);
         }
         //Atrast min nekonst
         int n = inf;
-        for (int k = 1; k < Ms; k++)
+        for (int i = 1; i < Ms; i++)
         {
-            if (!constant[k] && n > Distance[k])
+            if (!constant[i] && n > Distance[i])
             {
-                n = Distance[k];
-                distance_iter = k;
+                n = Distance[i];
+                distance_iter = i;
                 printf("NEK %d %d\n", distance_iter, n);
             }
         }
