@@ -2,6 +2,7 @@
 #include <fstream>
 #include <stdio.h>
 #define inf 0x7FFF
+#define _ inf
 #define min(A, B) ((A) < (B) ? (A) : (B))
 using namespace std;
 
@@ -13,13 +14,12 @@ int main(int argc, char **argv)
     const int Ms = 6;
 
     int Matrix[Ms][Ms] = {
-        0, 4, 2, inf, inf, inf,
-        4, 0, 1, 3, inf, inf,
-        2, 1, 0, 8, 10, inf,
-        inf, 3, 8, 0, 2, inf,
-        inf, inf, 10, 2, 0, inf,
-        inf, inf, inf, inf, inf, 0
-
+        0, 4, 2, _, _, _,
+        4, 0, 1, 3, _, _,
+        2, 1, 0, 8, 10, _,
+        _, 3, 8, 0, 2, _,
+        _, _, 10, 2, 0, _,
+        _, _, _, _, _, 0
     };
     unsigned int Iter[Ms];
     bool cst[Ms];
