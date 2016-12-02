@@ -50,35 +50,27 @@ int main(int argc, char **argv)
     }
 
     for (int i = 0; i < Ms; i++)
-    {
-        if (Distance[i] == inf)
-            printf("Unreachable\t");
-        else
-            printf("%d\t", Distance[i]);
-    }
+        (Distance[i] == inf) ? printf("_\t") : printf("%d\t", Distance[i]);
+    
     printf("\n");
     
     int ind = Ms - 1;
     int Order[Ms];
     int of = 1;
     Order[0] = ind;
-    int cn = 1;
 
-    while (cn)
+    for (int g = 0; g < Ms; g++)
     {
-        for (int g = 0; g < Ms; g++)
+        if (ind != g && Distance[ind] == (Matrix[ind][g] + Distance[g]) )
         {
-            if (ind != g)
-                if (Distance[ind] == (Matrix[ind][g] + Distance[g]))
-                {
-                    if (g != 0)
-                        ind = g;
-                    else
-                        cn = 0;
-                    Order[of++] = g;
-                }
+            if (g != 0)
+                ind = g;
+            else
+                break;
+            Order[of++] = g;
         }
     }
+
 
     int ror[of]; // Masivs ar jau atrasto isako celu.
     int of2 = 0; // Distanceators šim masīvam.
