@@ -67,23 +67,6 @@ int main(int argc, char **argv)
     int of = 1;
     Order[0] = ind;
     cn = 1;
-    while (0)
-    {
-        for (int g = 0; g < Ms; g++)
-        {
-            if (ind != g)
-                if (Iter[ind] == (Matrix[ind][g] + Iter[g]))
-                {
-                    if (Iter[ind] == inf)
-                        cn = 0;
-                    if (g != 0)
-                        ind = g;
-                    else
-                        cn = 0;
-                    Order[of--] = g;
-                }
-        }
-    }
 
     while (cn)
     {
