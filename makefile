@@ -7,8 +7,8 @@ path:
 path.exe:
 	./build/path.exe
 
-krask:
-	gcc ./src/Krask.c -o ./build/krask.exe
+Kruskal:
+	gcc ./src/Kruskal.c -o ./build/Kruskal.exe
 
-krask.exe:
-	./build/krask.exe
+Kruskal.exe:
+	./build/Kruskal.exe
