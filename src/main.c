@@ -1,10 +1,7 @@
-#include <iostream>
-#include <fstream>
 #include <stdio.h>
 #define inf 0x7FFF
 #define _ inf
 #define min(A, B) ((A) < (B) ? (A) : (B))
-using namespace std;
 
 int main(int argc, char **argv)
 {
@@ -60,7 +57,7 @@ int main(int argc, char **argv)
         else
             printf("%d\t", Iter[i]);
     }
-    printf('\n');
+    printf("\n");
     
     int ind = Ms - 1;
     int Order[Ms];
