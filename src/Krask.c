@@ -12,30 +12,28 @@ struct link
 
 int main()
 {
-    int Matrix[SIZED][SIZED]={
-        0,	6,	_,	11,	5,	_,	_,
-        6,	0,	15,	18,	8,	_,	_,
-        _,	15,	0,	8,	_,	_,	_,
-        11,	18,	8,	0,	_,	10,	7,
-        5,	8,	_,	_,	0,	15,	9,
-        _,	_,	_,	10,	15,	0,	_,
-        _,	_,	_,	7,	9,	_,	0};
+    int Matrix[SIZED][SIZED] = {
+        0, 6, _, 11, 5, _, _,
+        6, 0, 15, 18, 8, _, _,
+        _, 15, 0, 8, _, _, _,
+        11, 18, 8, 0, _, 10, 7,
+        5, 8, _, _, 0, 15, 9,
+        _, _, _, 10, 15, 0, _,
+        _, _, _, 7, 9, _, 0};
 
     int visited[SIZED] = {0};
     struct link Mi[SIZED];
     for (int a = 0; a < SIZED; a++)
         Mi[a] = (struct link){.source = -1, .size = inf};
 
-    int next = 0;
     int length = 0;
 
-    int maing[SIZED] = {0};
-    int groupn = 0;
+    int groupn = 0; // Some sort of id counter
 
-    for (int count = 1; count < SIZED; count++)
+    for (int count = 1, minimum = inf, alpha = MAYBE, beta = MAYBE;
+         count < SIZED;
+         count++, alpha = MAYBE, beta = MAYBE, minimum = inf)
     {
-        int minimum = _;
-        int alpha = MAYBE, beta = MAYBE;
         for (int i = 0; i < SIZED; i++)
         { // Pret katru virsotni
             for (int k = i + 1; k < SIZED; k++)
