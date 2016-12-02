@@ -20,7 +20,7 @@ int main()
         _,	_,	_,	10,	15,	0,	_,
         _,	_,	_,	7,	9,	_,	0};
 
-    int mark[SIZED] = {0};
+    int visited[SIZED] = {0};
     struct link Mi[SIZED];
     for (int a = 0; a < SIZED; a++)
         Mi[a] = (struct link){.source = -1, .size = MAX_VALUE};
@@ -40,7 +40,7 @@ int main()
         { // Pret katru virsotni
             for (int k = i + 1; k < SIZED; k++)
             {
-                if (!mark[k] || mark[i] != mark[k])
+                if (!visited[k] || visited[i] != visited[k])
                     //Ja viena no virstonem ir neiezimeta
                     //atskirigas grupas virsotnes
                     if (Matrix[i][k] < minn)
@@ -58,24 +58,24 @@ int main()
             printf("Error, minn == inf\n");
         else
             length += Matrix[alpha][beta];
-        if (mark[alpha] == 0)
+        if (visited[alpha] == 0)
         {
-            if (mark[beta] == 0)
+            if (visited[beta] == 0)
             {
-                mark[alpha] = mark[beta] = ++groupn;
+                visited[alpha] = visited[beta] = ++groupn;
             }
             else
-                mark[alpha] = mark[beta];
+                visited[alpha] = visited[beta];
         }
-        else if (mark[beta] == 0)
-            mark[beta] = mark[alpha];
+        else if (visited[beta] == 0)
+            visited[beta] = visited[alpha];
         else
         {
-            int repl = mark[beta];
-            int rep = mark[alpha];
+            int repl = visited[beta];
+            int rep = visited[alpha];
             for (int x = 0; x < SIZED; x++)
-                if (mark[x] == repl)
-                    mark[x] = rep;
+                if (visited[x] == repl)
+                    visited[x] = rep;
         }
         printf("Link %c <-> %c\n", alpha + 'A', beta + 'A');
     }
