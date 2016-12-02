@@ -8,9 +8,6 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    //ifstream("test1.dat");
-    //FILE * matr;
-    //fopen("","w+");
     const int Ms = 6;
 
     int Matrix[Ms][Ms] = {
@@ -19,8 +16,7 @@ int main(int argc, char **argv)
         2, 1, 0, 8, 10, _,
         _, 3, 8, 0, 2, _,
         _, _, 10, 2, 0, _,
-        _, _, _, _, _, 0
-    };
+        _, _, _, _, _, 0};
     unsigned int Iter[Ms];
     bool cst[Ms];
     cst[0] = true;
@@ -62,18 +58,19 @@ int main(int argc, char **argv)
         for(int j=i+1;j<Ms;j++)
         {
             Iter[j]=min(Iter[j],Iter[i]+Matrix[i][j]);
-            cout<<endl<<j<<" "<<Iter[j]<<endl;
+            printf("\n%d %d\n", j, Iter[j]);
         }
     }*/
 
     for (int i = 0; i < Ms; i++)
     {
         if (Iter[i] == inf)
-            cout << "Unreachable ";
+            printf("Unreachable\t");
         else
-            printf("%d ", Iter[i]);
-    } cout << endl;
-
+            printf("%d\t", Iter[i]);
+    }
+    printf('\n');
+    
     int ind = Ms - 1;
     int Order[Ms];
     int of = 1;
@@ -115,20 +112,21 @@ int main(int argc, char **argv)
                 }
         }
     }
-    
+
     int ror[of]; // Masivs ar jau atrasto isako celu.
     int of2 = 0; // Iterators šim masīvam.
     while (of)   // Datu ekstraktēšana un apgriešana otrādi.
         ror[of2++] = Order[--of];
+
     //Īsākā ceļa izvade
-    cout << "Order : \n";
-    if (ror[of2] != 5)
-    {
-        cout << of2 << '\n';
-        cout << "Path doesn't exist \n";
-        return 0;
+    printf("Order:");
+    if (ror[of2] != 5) {
+        printf("%d\n", of2);
+        printf("Path doesn't exist \n");
     }
-    for (int d = 0; d < of2; d++)
-        printf("%d ", ror[d]);
+    else
+        for (int d = 0; d < of2; d++)
+            printf("%d ", ror[d]);
+
     return 0;
 }
