@@ -31,14 +31,19 @@ int main(int argc, char **argv)
     // Get Distance from origin to all vertices
     for(unsigned int min_path_i = 0; true; ) // min_path_i -> Distanceātors
     {
+        ////
+        // Find new minimum values
         for (int i = 0; i < Ms; i++)
         {
-            //Jaunais = min esošais pret esošā ceļa attālumu + ceļa garums
-            int m = Distance[min_path_i] + Matrix[min_path_i][i];
-            Distance[i] = min(Distance[i], m);
-            printf("Minumum %c %c (%d)\n", min_path_i + 'A', i + 'A', Distance[i]);
+            if(!Found[i]) {
+                //Jaunais = min esošais pret esošā ceļa attālumu + ceļa garums
+                int m = Distance[min_path_i] + Matrix[min_path_i][i];
+                Distance[i] = min(Distance[i], m);
+                printf("Minumum %c %c (%d)\n", min_path_i + 'A', i + 'A', Distance[i]);
+            }
         }
-        //Atrast min nekonst
+        ////
+        // Pick new non-constant minimum
         int n = inf;
         for (int i = 1; i < Ms; i++)
         {
