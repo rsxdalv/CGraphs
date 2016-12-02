@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 
     ////
     // Initializators
-    bool constant[Ms] = { true };
+    bool Found[Ms] = { true };
 
     // initialize Distance
     unsigned int Distance[Ms];
@@ -34,21 +34,22 @@ int main(int argc, char **argv)
         for (int i = 0; i < Ms; i++)
         {
             //Jaunais = min esošais pret esošā ceļa attālumu + ceļa garums
-            Distance[i] = min(Distance[i], Distance[min_path_i] + Matrix[min_path_i][i]);
+            int m = Distance[min_path_i] + Matrix[min_path_i][i];
+            Distance[i] = min(Distance[i], m);
             printf("Minumum %c %c (%d)\n", min_path_i + 'A', i + 'A', Distance[i]);
         }
         //Atrast min nekonst
         int n = inf;
         for (int i = 1; i < Ms; i++)
         {
-            if (!constant[i] && n > Distance[i])
+            if (!Found[i] && n > Distance[i])
             {
                 n = Distance[i];
                 min_path_i = i;
             }
         }
         printf("Found vertice? %c (%d)\n", min_path_i + 'A', Distance[min_path_i]);
-        constant[min_path_i] = true;
+        Found[min_path_i] = true;
         if (n == inf)
             break;
     }
