@@ -15,8 +15,10 @@ int main(int argc, char **argv)
         _, _, 10, 2, 0, _,
         _, _, _, _, _, 0};
     unsigned int Iter[Ms];
-    bool cst[Ms];
-    cst[0] = true;
+    
+    bool cst[Ms] = { true }
+
+    // initialize Iter
     Iter[0] = 0;
     for (int i = 1; i < Ms; i++)
         Iter[i] = inf;
