@@ -4,50 +4,40 @@
 using namespace std;
 
 struct link {
-  int source,size;
+  int source, size;
 };
 
 #define MAX_VALUE 2048
-#define XQ MAX_VALUE
+#define _ MAX_VALUE
+#define sized 7
 
-int main(int argc, char ** argv)
+int main()
 {
-    #define sized 7
 
     int Matrix[sized][sized]={
-0,	6,	XQ,	11,	5,	XQ,	XQ,
-6,	0,	15,	18,	8,	XQ,	XQ,
-XQ,	15,	0,	8,	XQ,	XQ,	XQ,
-11,	18,	8,	0,	XQ,	10,	7,
-5,	8,	XQ,	XQ,	0,	15,	9,
-XQ,	XQ,	XQ,	10,	15,	0,	XQ,
-XQ,	XQ,	XQ,	7,	9,	XQ,	0
+        0,	6,	_,	11,	5,	_,	_,
+        6,	0,	15,	18,	8,	_,	_,
+        _,	15,	0,	8,	_,	_,	_,
+        11,	18,	8,	0,	_,	10,	7,
+        5,	8,	_,	_,	0,	15,	9,
+        _,	_,	_,	10,	15,	0,	_,
+        _,	_,	_,	7,	9,	_,	0};
 
-
-};
-
-    int mark[sized]={0};
-    link Mi[sized]={MAX_VALUE};
+    int mark[sized] = {0};
+    link Mi[sized] = {MAX_VALUE};
     for(int a=0;a<sized;a++)
-    {
-        Mi[a].source=-1;
-        Mi[a].size=MAX_VALUE;
-    }
+        Mi[a] = (struct link) {.source = -1, .size = MAX_VALUE}
 
-    int count=0;
     int next=0;
     int length=0;
 
     int maing[sized]={0};
     int groupn=0;
 
-    for(;;)
+    for(int count = 1; count < sized; count++)
     {
-        count++;
-        //kad sasniegts maks lielums.
-        if(count==sized) break;
 
-        int minn=XQ;
+        int minn=_;
         int alpha=-1,beta=-1;
         for(int i=0;i<sized;i++)
         { // Pret katru virsotni
@@ -67,7 +57,7 @@ XQ,	XQ,	XQ,	7,	9,	XQ,	0
             //if(mark[i])
         }
         if(alpha==-1||beta==-1) cout<<"Nesasniedzama virsotne!"<<endl;
-        if(minn==XQ) cout<<"kluuda!"<<endl;
+        if(minn==_) cout<<"kluuda!"<<endl;
         else
             length+=Matrix[alpha][beta];
         if(mark[alpha]==0)
@@ -89,8 +79,7 @@ XQ,	XQ,	XQ,	7,	9,	XQ,	0
                 if(mark[x]==repl)
                     mark[x]=rep;
         }
-        cout<<"Link V"<<alpha+1<<" - V"<<beta+1<<endl;
-
+        printf("Link %c <-> %c\n", alpha + 'A', beta + 'A');
     }
 
     /*for(;;)
