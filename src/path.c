@@ -71,15 +71,12 @@ int main(int argc, char **argv)
     int index = SIZE - 1;  // Reverse tracking index
     Path[0] = index; // Start from last
 
-    bool flag = true;
-    while(flag)
+    while(offset != SIZE) // Run until all paths are found
         for (int i = 0; i < SIZE; i++)
             if (index != i && Distance[index] == (Matrix[index][i] + Distance[i]) )
             {
                 if (i != 0)
                     index = i;
-                else
-                    flag = false;
                 Path[offset++] = i; // Append variable
             }
 
