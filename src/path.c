@@ -35,7 +35,7 @@ int main(int argc, char **argv)
         {
             //Jaunais = min esošais pret esošā ceļa attālumu + ceļa garums
             Distance[i] = min(Distance[i], Distance[min_path_i] + Matrix[min_path_i][i]);
-            printf("Minumum %d %d %d\n", min_path_i, i + 1, Distance[i]);
+            printf("Minumum %c %c (%d)\n", min_path_i + 'A', i + 'A', Distance[i]);
         }
         //Atrast min nekonst
         int n = inf;
@@ -47,7 +47,7 @@ int main(int argc, char **argv)
                 min_path_i = i;
             }
         }
-        printf("Found vertice? %d %d\n", min_path_i, Distance[min_path_i]);
+        printf("Found vertice? %c (%d)\n", min_path_i + 'A', Distance[min_path_i]);
         constant[min_path_i] = true;
         if (n == inf)
             break;
