@@ -82,51 +82,7 @@ int main()
         printf("Link %c <-> %c\n", alpha + 'A', beta + 'A');
     }
 
-    /*for(;;)
-    {
-    mark[next]=1;
-    count++;
-    if(count==SIZED) break;
-    for(int a=0;a<SIZED;a++)
-    {
-        if(a!=next)
-        //salidzinam esosos attalumus ar jauniegutajiem
-        {
-            if(Mi[a].size>Matrix[next][a])
-            {
-                Mi[a].source=next;
-                Mi[a].size=Matrix[next][a];
-            }
-        }
-    }
-    //atrod minimālo attālumu no neizīmētajām virsotnēm
-    int mini=MAX_VALUE;
-    for(int a=0;a<SIZED;a++)
-    {
-        if(!mark[a])
-         if(Mi[a].size<mini)
-         {
-             mini=Mi[a].size;
-             next=a;
-         }
-    }
-    // Un pēc tam atsāk ciklu no tās tādā veidā panākot, ka minimālie attālumi vienmēr būs pareizi.
-    // Izvada iegūto rezultātu :
-    cout<<"Link made V"<<next+1<<"-V"<<Mi[next].source+1<<endl;
-    //next=mini;
-    length+=Mi[next].size;
-    //Ja kāda virsotne nav pievienota visam pārējam, tad rodas kļūda, par kuru vienkārši paziņo :
-    if(mini==MAX_VALUE) cout << "Kluda...\n";
-
-    }
-    */
-
     cout<<"Length : "<<length<<endl;
-/*
-    for(int a=0;a<SIZED;a++)
-    {
 
-    }
-*/
     return 0;
 }
