@@ -1,7 +1,4 @@
-#include <iostream>
-
-// Pieliku komentārus lai kļūtu nedaudz skaidrāka darbība
-using namespace std;
+#include <stdio.h>
 
 struct link
 {
@@ -83,7 +80,6 @@ int main()
         printf("Link %c <-> %c\n", alpha + 'A', beta + 'A');
     }
 
-    cout << "Length : " << length << endl;
-
+    printf("Length: %d\n", length);
     return 0;
 }
