@@ -1,5 +1,5 @@
-all:
-	echo 'Not implemented yet!'
+all: Dijkstra Kruskal Prim
+	echo 'Built all files'
 
 Dijkstra:
 	gcc ./src/Dijkstra.c -o ./build/Dijkstra.exe
