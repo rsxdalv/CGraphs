@@ -9,12 +9,12 @@ struct link {
 
 #define MAX_VALUE 2048
 #define _ MAX_VALUE
-#define sized 7
+#define SIZED 7
 
 int main()
 {
 
-    int Matrix[sized][sized]={
+    int Matrix[SIZED][SIZED]={
         0,	6,	_,	11,	5,	_,	_,
         6,	0,	15,	18,	8,	_,	_,
         _,	15,	0,	8,	_,	_,	_,
@@ -23,25 +23,25 @@ int main()
         _,	_,	_,	10,	15,	0,	_,
         _,	_,	_,	7,	9,	_,	0};
 
-    int mark[sized] = {0};
-    link Mi[sized] = {MAX_VALUE};
-    for(int a=0;a<sized;a++)
+    int mark[SIZED] = {0};
+    link Mi[SIZED] = {MAX_VALUE};
+    for(int a=0;a<SIZED;a++)
         Mi[a] = (struct link) {.source = -1, .size = MAX_VALUE};
 
     int next=0;
     int length=0;
 
-    int maing[sized]={0};
+    int maing[SIZED]={0};
     int groupn=0;
 
-    for(int count = 1; count < sized; count++)
+    for(int count = 1; count < SIZED; count++)
     {
 
         int minn=_;
         int alpha=-1,beta=-1;
-        for(int i=0;i<sized;i++)
+        for(int i=0;i<SIZED;i++)
         { // Pret katru virsotni
-            for(int k=i+1;k<sized;k++)
+            for(int k=i+1;k<SIZED;k++)
             {
                 if(mark[k]==0 || mark[i]==0 || mark[i]!=mark[k])
                 //Ja viena no virstonem ir neiezimeta
@@ -75,7 +75,7 @@ int main()
         {
             int repl=mark[beta];
             int rep=mark[alpha];
-            for(int x=0;x<sized;x++)
+            for(int x=0;x<SIZED;x++)
                 if(mark[x]==repl)
                     mark[x]=rep;
         }
@@ -86,8 +86,8 @@ int main()
     {
     mark[next]=1;
     count++;
-    if(count==sized) break;
-    for(int a=0;a<sized;a++)
+    if(count==SIZED) break;
+    for(int a=0;a<SIZED;a++)
     {
         if(a!=next)
         //salidzinam esosos attalumus ar jauniegutajiem
@@ -101,7 +101,7 @@ int main()
     }
     //atrod minimālo attālumu no neizīmētajām virsotnēm
     int mini=MAX_VALUE;
-    for(int a=0;a<sized;a++)
+    for(int a=0;a<SIZED;a++)
     {
         if(!mark[a])
          if(Mi[a].size<mini)
@@ -123,7 +123,7 @@ int main()
 
     cout<<"Length : "<<length<<endl;
 /*
-    for(int a=0;a<sized;a++)
+    for(int a=0;a<SIZED;a++)
     {
 
     }
