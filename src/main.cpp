@@ -51,16 +51,7 @@ int main(int argc, char **argv)
             cn = false;
 
         cst[ite] = true;
-        //ite=n;
     }
-    /*for(int i=0;i<Ms;i++)
-    {
-        for(int j=i+1;j<Ms;j++)
-        {
-            Iter[j]=min(Iter[j],Iter[i]+Matrix[i][j]);
-            printf("\n%d %d\n", j, Iter[j]);
-        }
-    }*/
 
     for (int i = 0; i < Ms; i++)
     {
@@ -74,9 +65,7 @@ int main(int argc, char **argv)
     int ind = Ms - 1;
     int Order[Ms];
     int of = 1;
-    //Order[of--]=ind;
     Order[0] = ind;
-    //ind=2;
     cn = 1;
     while (0)
     {
@@ -87,7 +76,6 @@ int main(int argc, char **argv)
                 {
                     if (Iter[ind] == inf)
                         cn = 0;
-                    //printf("Match %d %d\n",ind,g);
                     if (g != 0)
                         ind = g;
                     else
