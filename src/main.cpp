@@ -57,7 +57,6 @@ int main(int argc, char **argv)
         cst[ite] = true;
         //ite=n;
     }
-    cout << endl;
     /*for(int i=0;i<Ms;i++)
     {
         for(int j=i+1;j<Ms;j++)
@@ -66,18 +65,6 @@ int main(int argc, char **argv)
             cout<<endl<<j<<" "<<Iter[j]<<endl;
         }
     }*/
-    for (int i = 0; i < Ms; i++)
-    {
-        for (int k = 0; k < Ms; k++)
-        {
-            if (Matrix[i][k] == inf)
-                cout << "#  ";
-            else
-                printf("%d  ", Matrix[i][k]);
-        }
-        printf("\n");
-    }
-    cout << endl;
 
     for (int i = 0; i < Ms; i++)
     {
@@ -85,8 +72,8 @@ int main(int argc, char **argv)
             cout << "Unreachable ";
         else
             printf("%d ", Iter[i]);
-    }
-    cout << endl;
+    } cout << endl;
+
     int ind = Ms - 1;
     int Order[Ms];
     int of = 1;
@@ -112,6 +99,7 @@ int main(int argc, char **argv)
                 }
         }
     }
+
     while (cn)
     {
         for (int g = 0; g < Ms; g++)
@@ -127,6 +115,7 @@ int main(int argc, char **argv)
                 }
         }
     }
+    
     int ror[of]; // Masivs ar jau atrasto isako celu.
     int of2 = 0; // Iterators šim masīvam.
     while (of)   // Datu ekstraktēšana un apgriešana otrādi.
@@ -135,7 +124,7 @@ int main(int argc, char **argv)
     cout << "Order : \n";
     if (ror[of2] != 5)
     {
-        cout << of2;
+        cout << of2 << '\n';
         cout << "Path doesn't exist \n";
         return 0;
     }
