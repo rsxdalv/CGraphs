@@ -29,8 +29,7 @@ int main(int argc, char **argv)
 
     ////
     // Get Distance from origin to all vertices
-    for(unsigned int min_path_i = 0; true; ) // min_path_i -> Distanceātors
-    {
+    for(unsigned int min_path_i = 0; true; ) {
         ////
         // Find new minimum values
         for (int i = 0; i < SIZE; i++)
@@ -74,11 +73,7 @@ int main(int argc, char **argv)
     while(offset != SIZE) // Run until all paths are found
         for (int i = 0; i < SIZE; i++)
             if (index != i && Distance[index] == (Matrix[index][i] + Distance[i]) )
-            {
-                if (i != 0)
-                    index = i;
-                Path[offset++] = i; // Append variable
-            }
+                Path[offset++] = index = i; // Append variable
 
     int ReversePath[offset]; // Masivs ar jau atrasto isako celu.
     int rOffset = 0; // Distanceators šim masīvam.
