@@ -15,49 +15,47 @@ int main(int argc, char **argv)
         _, _, 10, 2, 0, 3,
         _, _, _, 6, 3, 0};
 
-    unsigned int Iter[Ms];
     
     bool constant[Ms] = { true };
 
-    // initialize Iter
-    Iter[0] = 0;
+    // initialize Distance
+    unsigned int Distance[Ms];
+    Distance[0] = 0;
     for (int i = 1; i < Ms; i++)
-        Iter[i] = inf;
+        Distance[i] = inf;
 
-    unsigned int ite = 0;
-    while (1) // ite -> iterātors, cn -> izeja
+    unsigned int distance_iter = 0;
+    while (1) // distance_iter -> Distanceātors
     {
         for (int j = 0; j < Ms; j++)
         {
             //Jaunais = min esošais pret esošā ceļa attālumu + ceļa garums
-            Iter[j] = min(Iter[j], Iter[ite] + Matrix[ite][j]);
-            printf("MIN %d %d %d\n", ite, j + 1, Iter[j]);
+            Distance[j] = min(Distance[j], Distance[distance_iter] + Matrix[distance_iter][j]);
+            printf("MIN %d %d %d\n", distance_iter, j + 1, Distance[j]);
         }
         //Atrast min nekonst
         int n = inf;
         for (int k = 1; k < Ms; k++)
         {
-            // Ja nav konst
-            if (!constant[k])
-                if (n > Iter[k])
-                {
-                    n = Iter[k];
-                    ite = k;
-                    printf("NEK %d %d\n", ite, n);
-                }
+            if (!constant[k] && n > Distance[k])
+            {
+                n = Distance[k];
+                distance_iter = k;
+                printf("NEK %d %d\n", distance_iter, n);
+            }
         }
-        printf("MNK %d %d\n", ite, Iter[ite]);
-        constant[ite] = true;
+        printf("MNK %d %d\n", distance_iter, Distance[distance_iter]);
+        constant[distance_iter] = true;
         if (n == inf)
             break;
     }
 
     for (int i = 0; i < Ms; i++)
     {
-        if (Iter[i] == inf)
+        if (Distance[i] == inf)
             printf("Unreachable\t");
         else
-            printf("%d\t", Iter[i]);
+            printf("%d\t", Distance[i]);
     }
     printf("\n");
     
@@ -72,7 +70,7 @@ int main(int argc, char **argv)
         for (int g = 0; g < Ms; g++)
         {
             if (ind != g)
-                if (Iter[ind] == (Matrix[ind][g] + Iter[g]))
+                if (Distance[ind] == (Matrix[ind][g] + Distance[g]))
                 {
                     if (g != 0)
                         ind = g;
@@ -84,7 +82,7 @@ int main(int argc, char **argv)
     }
 
     int ror[of]; // Masivs ar jau atrasto isako celu.
-    int of2 = 0; // Iterators šim masīvam.
+    int of2 = 0; // Distanceators šim masīvam.
     while (of)   // Datu ekstraktēšana un apgriešana otrādi.
         ror[of2++] = Order[--of];
 
