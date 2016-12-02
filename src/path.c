@@ -94,8 +94,8 @@ int main(int argc, char **argv)
         printf("Path doesn't exist \n");
     }
     else
-        for (int d = 0; d < of2; d++)
-            printf("%d ", ReversePath[d]);
+        for (int i = 0; i < of2; i++)
+            printf("%d ", ReversePath[i]);
 
     return 0;
 }
