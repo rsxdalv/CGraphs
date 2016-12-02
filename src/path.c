@@ -65,29 +65,31 @@ int main(int argc, char **argv)
     
     ////
     // Transform minimum path distances to a path
-    int Path[SIZE];
     int offset = 1; // Path tracker
     int index = SIZE - 1;  // Reverse tracking index
-    Path[0] = index; // Start from last
+    int ReversePath[SIZE] = { index }; // Start from last
 
     while(offset != SIZE) // Run until all paths are found
         for (int i = 0; i < SIZE; i++)
             if (index != i && Distance[index] == (Matrix[index][i] + Distance[i]) )
-                Path[offset++] = index = i; // Append variable
+                ReversePath[offset++] = index = i; // Append variable
 
-    int ReversePath[offset]; // Masivs ar jau atrasto isako celu.
-    int rOffset = 0; // Distanceators šim masīvam.
-    while (offset)   // Datu ekstraktēšana un apgriešana otrādi.
-        ReversePath[rOffset++] = Path[--offset];
+    ////
+    // Flip data so that path is from start to end
+    int Path[offset];
+    int rOffset = 0;
+    while (offset)
+        Path[rOffset++] = ReversePath[--offset];
 
-    //Īsākā ceļa izvade
+    ////
+    // Verify path length and output path
     printf("Path: ");
     if (rOffset != 6) {
         printf("Path doesn't exist \n");
     }
     else
         for (int i = 0; i < rOffset; i++)
-            printf("%c -> ", ReversePath[i] + 'A');
+            printf("%c -> ", Path[i] + 'A');
 
     return 0;
 }
