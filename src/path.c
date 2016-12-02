@@ -67,35 +67,35 @@ int main(int argc, char **argv)
     ////
     // Transform minimum path distances to a path
     int Path[SIZE];
-    int of = 1; 
+    int offset = 1; // Path tracker
     int index = SIZE - 1;  // Reverse tracking index
-    Path[0] = index;
+    Path[0] = index; // Start from last
 
-    for (int i = 0; i < SIZE; i++)
-        if (index != i && Distance[index] == (Matrix[index][i] + Distance[i]) )
-        {
-            if (i != 0)
-                index = i;
-            else
-                break;
-            Path[of++] = i;
-        }
+    bool flag = true;
+    while(flag)
+        for (int i = 0; i < SIZE; i++)
+            if (index != i && Distance[index] == (Matrix[index][i] + Distance[i]) )
+            {
+                if (i != 0)
+                    index = i;
+                else
+                    flag = false;
+                Path[offset++] = i; // Append variable
+            }
 
-
-    int ReversePath[of]; // Masivs ar jau atrasto isako celu.
-    int of2 = 0; // Distanceators šim masīvam.
-    while (of)   // Datu ekstraktēšana un apgriešana otrādi.
-        ReversePath[of2++] = Path[--of];
+    int ReversePath[offset]; // Masivs ar jau atrasto isako celu.
+    int rOffset = 0; // Distanceators šim masīvam.
+    while (offset)   // Datu ekstraktēšana un apgriešana otrādi.
+        ReversePath[rOffset++] = Path[--offset];
 
     //Īsākā ceļa izvade
-    printf("Path:");
-    if (ReversePath[of2] != 11) {
-        printf("%d\n", of2);
+    printf("Path: ");
+    if (rOffset != 6) {
         printf("Path doesn't exist \n");
     }
     else
-        for (int i = 0; i < of2; i++)
-            printf("%d ", ReversePath[i]);
+        for (int i = 0; i < rOffset; i++)
+            printf("%c -> ", ReversePath[i] + 'A');
 
     return 0;
 }
