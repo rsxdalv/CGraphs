@@ -11,9 +11,9 @@ int main(int argc, char **argv)
         0, 4, 2, _, _, _,
         4, 0, 1, 3, _, _,
         2, 1, 0, 8, 10, _,
-        _, 3, 8, 0, 2, _,
-        _, _, 10, 2, 0, _,
-        _, _, _, _, _, 0};
+        _, 3, 8, 0, 2, 6,
+        _, _, 10, 2, 0, 3,
+        _, _, _, 6, 3, 0};
 
     unsigned int Iter[Ms];
     
@@ -108,7 +108,7 @@ int main(int argc, char **argv)
 
     //Īsākā ceļa izvade
     printf("Order:");
-    if (ror[of2] != 5) {
+    if (ror[of2] != 11) {
         printf("%d\n", of2);
         printf("Path doesn't exist \n");
     }

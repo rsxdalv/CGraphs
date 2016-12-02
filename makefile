@@ -1,8 +1,8 @@
 all:
 	echo 'Not implemented yet!'
 
-main:
-	gcc ./src/main.c -o ./build/main.exe
+path:
+	gcc ./src/path.c -o ./build/path.exe
 
-run_main:
-	./build/main.exe
+path.exe:
+	./build/path.exe
